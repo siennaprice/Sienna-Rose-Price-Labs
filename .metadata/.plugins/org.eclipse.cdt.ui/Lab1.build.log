@@ -1,14 +1,9 @@
-18:47:13 **** Build of configuration Debug for project Lab1 ****
+22:05:05 **** Incremental Build of configuration Debug for project Lab1 ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
 Finished building: ../Sources/main.c
- 
-Building file: ../Project_Settings/Startup_Code/startup_MK20D5.S
-Invoking: Cross ARM GNU Assembler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D5.d" -MT"Project_Settings/Startup_Code/startup_MK20D5.o" -c -o "Project_Settings/Startup_Code/startup_MK20D5.o" "../Project_Settings/Startup_Code/startup_MK20D5.S"
-Finished building: ../Project_Settings/Startup_Code/startup_MK20D5.S
  
 Building file: ../Project_Settings/Startup_Code/system_MK20D5.c
 Invoking: Cross ARM C Compiler
@@ -21,5 +16,5 @@ arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
 Finished building target: Lab1.elf
  
 
-18:47:14 Build Finished (took 947ms)
+22:05:06 Build Finished (took 797ms)
 

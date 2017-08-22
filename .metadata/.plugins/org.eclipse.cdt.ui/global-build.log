@@ -1,18 +1,103 @@
-18:47:13 **** Clean-only build of configuration Debug for project Lab1 ****
-make clean 
-rm -rf  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o  ./Sources/main.d  ./Project_Settings/Startup_Code/system_MK20D5.d  ./Project_Settings/Startup_Code/startup_MK20D5.d  Lab1.elf
- 
-18:47:13 **** Build of configuration Debug for project Lab1 ****
+18:51:38 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:19 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Nothing to be done for 'all'.
+21:59:29 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:47:2: error: 'PORTD_PDDR' undeclared (first use in this function)
+  PORTD_PDDR = (1 << 4);
+  ^
+../Sources/main.c:47:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:61:3: error: 'GPI0A_PDOR' undeclared (first use in this function)
+   GPI0A_PDOR = 0;
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:71:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^
+../Sources/main.c:72:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+21:59:45 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:47:2: error: 'PORTD_PDDR' undeclared (first use in this function)
+  PORTD_PDDR = (1 << 4);
+  ^
+../Sources/main.c:47:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:61:3: error: 'GPI0A_PDOR' undeclared (first use in this function)
+   GPI0A_PDOR = 0;
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:71:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^
+../Sources/main.c:72:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+21:59:49 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:47:2: error: 'PORTD_PDDR' undeclared (first use in this function)
+  PORTD_PDDR = (1 << 4);
+  ^
+../Sources/main.c:47:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:61:3: error: 'GPI0A_PDOR' undeclared (first use in this function)
+   GPI0A_PDOR = 0;
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:71:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^
+../Sources/main.c:72:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:02:13 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:47:2: error: 'PORTD_PDDR' undeclared (first use in this function)
+  PORTD_PDDR = (1 << 4);
+  ^
+../Sources/main.c:47:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:61:3: error: 'GPI0A_PDOR' undeclared (first use in this function)
+   GPI0A_PDOR = 0;
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:71:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^
+../Sources/main.c:72:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:05:05 **** Incremental Build of configuration Debug for project Lab1 ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
 Finished building: ../Sources/main.c
- 
-Building file: ../Project_Settings/Startup_Code/startup_MK20D5.S
-Invoking: Cross ARM GNU Assembler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D5.d" -MT"Project_Settings/Startup_Code/startup_MK20D5.o" -c -o "Project_Settings/Startup_Code/startup_MK20D5.o" "../Project_Settings/Startup_Code/startup_MK20D5.S"
-Finished building: ../Project_Settings/Startup_Code/startup_MK20D5.S
  
 Building file: ../Project_Settings/Startup_Code/system_MK20D5.c
 Invoking: Cross ARM C Compiler
