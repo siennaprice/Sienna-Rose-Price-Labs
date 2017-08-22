@@ -649,3 +649,6 @@ java.io.FileNotFoundException: C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Ros
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-08-22 22:51:12.106
+!MESSAGE Indexed 'Lab3' (2 sources, 19 headers) in 0.371 sec: 1,535 declarations; 3,088 references; 0 unresolved inclusions; 58 syntax errors; 14 unresolved names (0.3%)
