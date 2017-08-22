@@ -31,61 +31,14 @@
 #include "MK20D5.h"
 #include <stdbool.h>
 
-int r;
-int g;
-int b;
 
-set_LED(r,g,b){
-	if (r = 1) {
-		GPIOC_PDOR = 0;
-	}
-	else (r = 0) {
-		GPIOC_PDOR = (1 << 3);
-	}
-	if (g = 1) {
-		GPIOC_PDOR = 0;
-	}
-	else (g = 0) {
-		GPIOD_PCOR = (1 << 4);
-	}
-
-	if (b = 1) {
-		GPIOA_PDOR = 0;
-	}
-	else (b = 0) {
-		GPIOA_PDOR = (1 << 2);
-	}
-
-}
-
-int main(void)
-{
-	//Clocking the port control module
-	// Enable the clock for the port control module
-		SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK | SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTD_MASK | SIM_SCGC5_PORTE_MASK;
-
-    //CODE BEGINS HERE
-
-	//Initialising the LED's
-	//select GPIO mode
-	PORTC_PCR3 = 0x100; //red
-	PORTD_PCR4 = 0x100; //green
-	PORTA_PCR2 = 0x100; //blue
-
-	//Setting data direction register to outputs
-	GPIOC_PDDR = (1 << 3);
-	GPIOD_PDDR = (1 << 4);
-	GPIOA_PDDR = (1 << 2);
-
-
-
-	//integers
+//integers
 	int i;
 	int j;
 	int k;
 	int counter;
 
-	for (;;) {
+int spin(i,j,k){
 		for (counter = 0; counter < 1000000; counter++) {
 			i = 0;
 
@@ -103,15 +56,68 @@ int main(void)
 							for (counter = 0; counter < 1000000; counter++) {
 								k = 1;
 							}
-							set_LED(i,j,k);
-    /* Never leave main */
-    return 0;
+
 						}
 					}
 				}
 			}
 		}
+		return(0);
+}
+
+int main(void)
+{
+	//Clocking the port control module
+	// Enable the clock for the port control module
+	SIM_SCGC5 |= 0x3e000;
+
+	//CODE BEGINS HERE
+
+	//Initialising the LED's
+	//select GPIO mode
+	PORTC_PCR3 = 0x100; //red
+	PORTD_PCR4 = 0x100; //green
+	PORTA_PCR2 = 0x100; //blue
+
+	//Setting data direction register to outputs
+	GPIOC_PDDR = (1 << 3);
+	GPIOD_PDDR = (1 << 4);
+	GPIOA_PDDR = (1 << 2);
+
+int i;
+int j;
+int k;
+
+	set_LED(i,j,k){
+		if (i = 1) {
+			GPIOC_PDOR = 0;
+		}
+		else (i = 0); {
+			GPIOC_PDOR = (1 << 3);
+		}
+		if (j = 1) {
+			GPIOC_PDOR = 0;
+		}
+		else (j = 0); {
+			GPIOD_PDOR = (1 << 4);
+		}
+
+		if (k = 1) {
+			GPIOA_PDOR = 0;
+		}
+		else (k = 0); {
+			GPIOA_PDOR = (1 << 2);
+		}
+
 	}
+
+	////////////////////////////////////////////////////////////////////////////////
+	// EOF
+	////////////////////////////////////////////////////////////////////////////////
+
+	/* Never leave main */
+	return 0;
+}
 ////////////////////////////////////////////////////////////////////////////////
 // EOF
 ////////////////////////////////////////////////////////////////////////////////

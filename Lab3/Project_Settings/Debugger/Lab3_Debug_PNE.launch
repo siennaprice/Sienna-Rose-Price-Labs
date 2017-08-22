@@ -112,7 +112,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/Lab3.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Lab3"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.823356342"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/Lab3"/>
 </listAttribute>
