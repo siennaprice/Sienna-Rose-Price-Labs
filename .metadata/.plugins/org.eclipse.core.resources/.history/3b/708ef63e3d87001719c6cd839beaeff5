@@ -38,7 +38,7 @@
 	int k;
 	int counter;
 
-int spin(i,j,k){
+set_LED(i,j,k) {
 		for (counter = 0; counter < 1000000; counter++) {
 			i = 0;
 
@@ -84,28 +84,29 @@ int main(void)
 	GPIOD_PDDR = (1 << 4);
 	GPIOA_PDDR = (1 << 2);
 
-int i;
-int j;
-int k;
 
-	set_LED(i,j,k){
-		if (i = 1) {
+	int r;
+	int g;
+	int b;
+
+	set_LED(r,g,b){
+		if (r = 1) {
 			GPIOC_PDOR = 0;
 		}
-		else (i = 0); {
+		else (r = 0); {
 			GPIOC_PDOR = (1 << 3);
 		}
-		if (j = 1) {
+		if (g = 1) {
 			GPIOC_PDOR = 0;
 		}
-		else (j = 0); {
+		else (g = 0); {
 			GPIOD_PDOR = (1 << 4);
 		}
 
-		if (k = 1) {
+		if (b = 1) {
 			GPIOA_PDOR = 0;
 		}
-		else (k = 0); {
+		else (b = 0); {
 			GPIOA_PDOR = (1 << 2);
 		}
 

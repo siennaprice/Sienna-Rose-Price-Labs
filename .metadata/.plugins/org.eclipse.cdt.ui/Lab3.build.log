@@ -1,49 +1,45 @@
-23:01:01 **** Build of configuration Debug for project Lab3 ****
+23:28:53 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c:39:1: warning: return type defaults to 'int' [enabled by default]
- set_LED(r,g,b){
- ^
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:39:1: warning: type of 'r' defaults to 'int' [enabled by default]
-../Sources/main.c:39:1: warning: type of 'g' defaults to 'int' [enabled by default]
-../Sources/main.c:39:1: warning: type of 'b' defaults to 'int' [enabled by default]
-../Sources/main.c:41:3: error: 'GPIOC_PDOR' undeclared (first use in this function)
-   GPIOC_PDOR = 0;
-   ^
-../Sources/main.c:41:3: note: each undeclared identifier is reported only once for each function it appears in
-../Sources/main.c:50:3: error: 'GPIOD_PCOR' undeclared (first use in this function)
-   GPIOD_PCOR = (1 << 4);
-   ^
-../Sources/main.c:54:3: error: 'GPIOA_PDOR' undeclared (first use in this function)
-   GPIOA_PDOR = 0;
-   ^
+../Sources/main.c: In function 'spin':
+../Sources/main.c:41:5: warning: type of 'i' defaults to 'int' [enabled by default]
+ int spin(i,j,k){
+     ^
+../Sources/main.c:41:5: warning: type of 'j' defaults to 'int' [enabled by default]
+../Sources/main.c:41:5: warning: type of 'k' defaults to 'int' [enabled by default]
 ../Sources/main.c: In function 'main':
-../Sources/main.c:66:2: error: 'SIM_SCGC5' undeclared (first use in this function)
-  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK | SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTD_MASK | SIM_SCGC5_PORTE_MASK;
+../Sources/main.c:72:2: error: 'SIM_SCGC5' undeclared (first use in this function)
+  SIM_SCGC5 |= 0x3e000;
   ^
-../Sources/main.c:72:2: error: 'PORTC_PCR3' undeclared (first use in this function)
+../Sources/main.c:72:2: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:78:2: error: 'PORTC_PCR3' undeclared (first use in this function)
   PORTC_PCR3 = 0x100; //red
   ^
-../Sources/main.c:73:2: error: 'PORTD_PCR4' undeclared (first use in this function)
+../Sources/main.c:79:2: error: 'PORTD_PCR4' undeclared (first use in this function)
   PORTD_PCR4 = 0x100; //green
   ^
-../Sources/main.c:74:2: error: 'PORTA_PCR2' undeclared (first use in this function)
+../Sources/main.c:80:2: error: 'PORTA_PCR2' undeclared (first use in this function)
   PORTA_PCR2 = 0x100; //blue
   ^
-../Sources/main.c:77:2: error: 'GPIOC_PDDR' undeclared (first use in this function)
+../Sources/main.c:83:2: error: 'GPIOC_PDDR' undeclared (first use in this function)
   GPIOC_PDDR = (1 << 3);
   ^
-../Sources/main.c:78:2: error: 'GPIOD_PDDR' undeclared (first use in this function)
+../Sources/main.c:84:2: error: 'GPIOD_PDDR' undeclared (first use in this function)
   GPIOD_PDDR = (1 << 4);
   ^
-../Sources/main.c:79:2: error: 'GPIOA_PDDR' undeclared (first use in this function)
+../Sources/main.c:85:2: error: 'GPIOA_PDDR' undeclared (first use in this function)
   GPIOA_PDDR = (1 << 2);
   ^
+../Sources/main.c:91:2: warning: implicit declaration of function 'set_LED' [-Wimplicit-function-declaration]
+  set_LED(i,j,k){
+  ^
+../Sources/main.c:91:16: error: expected ';' before '{' token
+  set_LED(i,j,k){
+                ^
 Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
 
-23:01:01 Build Finished (took 288ms)
+23:28:54 Build Finished (took 241ms)
 
