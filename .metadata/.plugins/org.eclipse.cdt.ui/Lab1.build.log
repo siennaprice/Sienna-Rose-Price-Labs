@@ -1,0 +1,27 @@
+18:42:06 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup_MK20D5.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D5.d" -MT"Project_Settings/Startup_Code/startup_MK20D5.o" -c -o "Project_Settings/Startup_Code/startup_MK20D5.o" "../Project_Settings/Startup_Code/startup_MK20D5.S"
+Finished building: ../Project_Settings/Startup_Code/startup_MK20D5.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_MK20D5.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MK20D5.d" -MT"Project_Settings/Startup_Code/system_MK20D5.o" -c -o "Project_Settings/Startup_Code/system_MK20D5.o" "../Project_Settings/Startup_Code/system_MK20D5.c"
+Finished building: ../Project_Settings/Startup_Code/system_MK20D5.c
+ 
+Building target: 59j.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DN128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab1/Project_Settings/Linker_Files" -Wl,-Map,"59j.map" -specs=nano.specs -specs=nosys.specs -o "59j.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/bin/ld.exe: cannot open linker script file MK20DN128xxx5_flash.ld: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+makefile:52: recipe for target '59j.elf' failed
+make: *** [59j.elf] Error 1
+
+18:42:07 Build Finished (took 887ms)
+
