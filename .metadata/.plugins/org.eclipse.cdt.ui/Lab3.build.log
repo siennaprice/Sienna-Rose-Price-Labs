@@ -1,15 +1,21 @@
-02:23:30 **** Incremental Build of configuration Debug for project Lab3 ****
+03:02:57 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'main':
-../Sources/main.c:40:5: error: 'PORTA_PCR2' undeclared (first use in this function)
-     PORTA_PCR2 = 0x100;
-     ^
-../Sources/main.c:40:5: note: each undeclared identifier is reported only once for each function it appears in
-Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
-make: *** [Sources/main.o] Error 1
+../Sources/main.c: In function 'set_LED':
+../Sources/main.c:99:13: warning: type of 'i' defaults to 'int' [enabled by default]
+         int set_LED(i,j,k){
+             ^
+../Sources/main.c:99:13: warning: type of 'j' defaults to 'int' [enabled by default]
+../Sources/main.c:99:13: warning: type of 'k' defaults to 'int' [enabled by default]
+Finished building: ../Sources/main.c
+ 
+Building target: Lab3.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+Finished building target: Lab3.elf
+ 
 
-02:23:30 Build Finished (took 246ms)
+03:02:57 Build Finished (took 648ms)
 
