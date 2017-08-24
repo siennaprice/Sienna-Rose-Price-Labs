@@ -1,31 +1,29 @@
-02:43:10 **** Incremental Build of configuration Debug for project Lab3 ****
+03:06:33 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:06:36 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:06:41 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:07:47 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:07:54 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:08:12 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'spin':
-../Sources/main.c:42:5: warning: type of 'i' defaults to 'int' [enabled by default]
- int spin(i,j,k){
-     ^
-../Sources/main.c:42:5: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:42:5: warning: type of 'k' defaults to 'int' [enabled by default]
-../Sources/main.c: In function 'main':
-../Sources/main.c:119:1: error: expected declaration or statement at end of input
- }
- ^
-make: *** [Sources/main.o] Error 1
-Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
-02:44:11 **** Incremental Build of configuration Debug for project Lab3 ****
-make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'spin':
-../Sources/main.c:42:5: warning: type of 'i' defaults to 'int' [enabled by default]
- int spin(i,j,k){
-     ^
-../Sources/main.c:42:5: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:42:5: warning: type of 'k' defaults to 'int' [enabled by default]
+../Sources/main.c: In function 'set_LED':
+../Sources/main.c:82:7: warning: type of 'i' defaults to 'int' [enabled by default]
+   int set_LED(i,j,k) {
+       ^
+../Sources/main.c:82:7: warning: type of 'j' defaults to 'int' [enabled by default]
+../Sources/main.c:82:7: warning: type of 'k' defaults to 'int' [enabled by default]
 Finished building: ../Sources/main.c
  
 Building target: Lab3.elf
@@ -33,132 +31,9 @@ Invoking: Cross ARM C++ Linker
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
 Finished building target: Lab3.elf
  
-02:45:58 **** Incremental Build of configuration Debug for project Lab3 ****
+03:08:30 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'spin':
-../Sources/main.c:42:5: warning: type of 'i' defaults to 'int' [enabled by default]
- int spin(i,j,k){
-     ^
-../Sources/main.c:42:5: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:42:5: warning: type of 'k' defaults to 'int' [enabled by default]
-Finished building: ../Sources/main.c
- 
-Building target: Lab3.elf
-Invoking: Cross ARM C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
-Finished building target: Lab3.elf
- 
-02:48:25 **** Incremental Build of configuration Debug for project Lab3 ****
+make: Nothing to be done for 'all'.
+03:09:00 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'spin':
-../Sources/main.c:42:5: warning: type of 'i' defaults to 'int' [enabled by default]
- int spin(i,j,k){
-     ^
-../Sources/main.c:42:5: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:42:5: warning: type of 'k' defaults to 'int' [enabled by default]
-Finished building: ../Sources/main.c
- 
-Building target: Lab3.elf
-Invoking: Cross ARM C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
-Finished building target: Lab3.elf
- 
-02:57:35 **** Incremental Build of configuration Debug for project Lab3 ****
-make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:37:6: error: 'i' undeclared (first use in this function)
-  if (i = 1) {
-      ^
-../Sources/main.c:37:6: note: each undeclared identifier is reported only once for each function it appears in
-../Sources/main.c:43:6: error: 'j' undeclared (first use in this function)
-  if (j = 1) {
-      ^
-../Sources/main.c:50:6: error: 'k' undeclared (first use in this function)
-  if (k = 1) {
-      ^
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:101:13: warning: type of 'i' defaults to 'int' [enabled by default]
-         int set_LED(i,j,k){
-             ^
-../Sources/main.c:101:13: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:101:13: warning: type of 'k' defaults to 'int' [enabled by default]
-../Sources/main.c: At top level:
-../Sources/main.c:118:2: error: expected identifier or '(' before 'return'
-  return 0;
-  ^
-../Sources/main.c:119:1: error: expected identifier or '(' before '}' token
- }
- ^
-../Sources/main.c:120:1: error: expected identifier or '(' before '}' token
- }
- ^
-Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
-make: *** [Sources/main.o] Error 1
-02:58:23 **** Incremental Build of configuration Debug for project Lab3 ****
-make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:104:13: warning: type of 'i' defaults to 'int' [enabled by default]
-         int set_LED(i,j,k){
-             ^
-../Sources/main.c:104:13: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:104:13: warning: type of 'k' defaults to 'int' [enabled by default]
-../Sources/main.c: At top level:
-../Sources/main.c:121:2: error: expected identifier or '(' before 'return'
-  return 0;
-  ^
-../Sources/main.c:122:1: error: expected identifier or '(' before '}' token
- }
- ^
-../Sources/main.c:123:1: error: expected identifier or '(' before '}' token
- }
- ^
-Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
-make: *** [Sources/main.o] Error 1
-02:59:22 **** Incremental Build of configuration Debug for project Lab3 ****
-make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:104:13: warning: type of 'i' defaults to 'int' [enabled by default]
-         int set_LED(i,j,k){
-             ^
-../Sources/main.c:104:13: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:104:13: warning: type of 'k' defaults to 'int' [enabled by default]
-Finished building: ../Sources/main.c
- 
-Building target: Lab3.elf
-Invoking: Cross ARM C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
-Finished building target: Lab3.elf
- 
-03:02:57 **** Incremental Build of configuration Debug for project Lab3 ****
-make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'set_LED':
-../Sources/main.c:99:13: warning: type of 'i' defaults to 'int' [enabled by default]
-         int set_LED(i,j,k){
-             ^
-../Sources/main.c:99:13: warning: type of 'j' defaults to 'int' [enabled by default]
-../Sources/main.c:99:13: warning: type of 'k' defaults to 'int' [enabled by default]
-Finished building: ../Sources/main.c
- 
-Building target: Lab3.elf
-Invoking: Cross ARM C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab3/Project_Settings/Linker_Files" -Wl,-Map,"Lab3.map" -specs=nano.specs -specs=nosys.specs -o "Lab3.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
-Finished building target: Lab3.elf
- 
+make: Nothing to be done for 'all'.

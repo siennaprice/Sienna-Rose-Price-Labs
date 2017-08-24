@@ -36,7 +36,6 @@ static int i;
 static int j;
 static int k;
 
-
 int set_LED(void){
 	if (i = 1) {
 		GPIOC_PDOR = 0;
@@ -74,60 +73,38 @@ int main(void)
 	PORTD_PCR4 = 0x100; //green
 	PORTA_PCR2 = 0x100; //blue
 
-
-	static int counter;
+	//integers
+	int i;
+	int j;
+	int k;
+	int counter;
 
 	for (;;){
+		for (counter = 0; counter < 1000000; counter++) {
+			i = 0;
 
-		int set_LED(i,j,k) {
-			//1,0,0
-			i = 1;
-			j = 0;
-			k = 0;
-			for (counter = 0; counter <= 10000000; counter++){
-				//
-			}
-			//110
-			j = 1;
-			k = 0;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			//111
-			k = 1;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			//011
-			i = 0;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			//001
-			j = 0;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			//010
-			k = 1;
-			j = 0;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			//101
-			i = 1;
-			k = 0;
-			j = 1;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
-			}
-			i = 0;
-			j = 0;
-			k = 0;
-			for (counter = 0; counter <= 1000000; counter++){
-				//
+			for (counter = 0; counter < 1000000; counter++) {
+				i = 1;
+
+				for (counter = 0; counter < 1000000; counter++) {
+					j = 0;
+
+					for (counter = 0; counter < 1000000; counter++) {
+						j = 1;
+						for (counter = 0; counter < 1000000; counter++) {
+							k = 0;
+
+							for (counter = 0; counter < 1000000; counter++) {
+								k = 1;
+								int set_LED(i,j,k){
+								}
+							}
+						}
+					}
+				}
 			}
 		}
+
 		/* Never leave main */
 		return (0);
 	}
