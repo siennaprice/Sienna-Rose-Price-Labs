@@ -1496,3 +1496,6 @@ java.io.FileNotFoundException: C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Ros
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-08-23 03:05:35.115
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.processorexpert.core.internal.PMOpenProjectFromHistory$1
