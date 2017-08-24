@@ -85,7 +85,7 @@ int main(void)
 			i = 1;
 			for (counter = 0; counter <= 10000000; counter++){
 				//
-				int set_LED();
+
 			}
 
 			//110
@@ -94,7 +94,6 @@ int main(void)
 			k = 0;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 
 			//011
@@ -103,7 +102,6 @@ int main(void)
 			k = 1;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 
 			//001
@@ -112,7 +110,6 @@ int main(void)
 			k = 1;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 
 			//010
@@ -121,7 +118,6 @@ int main(void)
 			j = 0;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 
 			//101
@@ -130,7 +126,6 @@ int main(void)
 			j = 1;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 
 			i = 0;
@@ -138,7 +133,6 @@ int main(void)
 			k = 0;
 			for (counter = 0; counter <= 1000000; counter++){
 				//
-				int set_LED();
 			}
 		}
 		/* Never leave main */
