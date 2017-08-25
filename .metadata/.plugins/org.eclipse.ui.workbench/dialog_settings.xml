@@ -4,12 +4,16 @@
 		<item value="1440" key="dialogWidth"/>
 		<item value="767" key="dialogHeight"/>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="configuration"/>
 		</list>
 		<list key="orderedElements">
+			<item value="com.processorexpert.ui.deviceinit.views.RegistryInit"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">

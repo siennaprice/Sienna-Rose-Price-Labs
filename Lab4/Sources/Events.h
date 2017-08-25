@@ -33,7 +33,6 @@
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
-#include "AS1.h"
 #include "ASerialLdd1.h"
 #include "redLED.h"
 #include "BitIoLdd1.h"
@@ -41,6 +40,8 @@
 #include "BitIoLdd2.h"
 #include "blueLED.h"
 #include "BitIoLdd3.h"
+#include "Term1.h"
+#include "Inhr1.h"
 
 #ifdef __cplusplus
 extern "C" {

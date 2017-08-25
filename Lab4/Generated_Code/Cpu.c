@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-25, 21:40, # CodeGen: 2
+**     Date/Time   : 2017-08-26, 02:30, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -294,14 +294,15 @@
 /* MODULE Cpu. */
 
 /* {Default RTOS Adapter} No RTOS includes */
-#include "AS1.h"
-#include "ASerialLdd1.h"
 #include "redLED.h"
 #include "BitIoLdd1.h"
 #include "greenLED.h"
 #include "BitIoLdd2.h"
 #include "blueLED.h"
 #include "BitIoLdd3.h"
+#include "Term1.h"
+#include "Inhr1.h"
+#include "ASerialLdd1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -510,14 +511,15 @@ void PE_low_level_init(void)
   /* Common initialization of the CPU registers */
   /* NVICIP8: PRI8=0 */
   NVICIP8 = NVIC_IP_PRI8(0x00);
-  /* ### Asynchro serial "AS1" init code ... */
-  AS1_Init();
   /* ### BitIO_LDD "BitIoLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd1_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd2_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd3_Init(NULL);
+  /* ### Asynchro serial "Inhr1" init code ... */
+  Inhr1_Init();
+  /* ###  "Term1" init code ... */
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

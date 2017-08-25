@@ -6,7 +6,7 @@
 **     Version     : Component 01.009, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-25, 21:40, # CodeGen: 2
+**     Date/Time   : 2017-08-26, 02:30, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -55,14 +55,15 @@
 */         
 
   #include "Cpu.h"
-  #include "AS1.h"
-  #include "ASerialLdd1.h"
   #include "redLED.h"
   #include "BitIoLdd1.h"
   #include "greenLED.h"
   #include "BitIoLdd2.h"
   #include "blueLED.h"
   #include "BitIoLdd3.h"
+  #include "Term1.h"
+  #include "Inhr1.h"
+  #include "ASerialLdd1.h"
   #include "Events.h"
 
 

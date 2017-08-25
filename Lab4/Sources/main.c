@@ -30,7 +30,6 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
-#include "AS1.h"
 #include "ASerialLdd1.h"
 #include "redLED.h"
 #include "BitIoLdd1.h"
@@ -38,6 +37,8 @@
 #include "BitIoLdd2.h"
 #include "blueLED.h"
 #include "BitIoLdd3.h"
+#include "Term1.h"
+#include "Inhr1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -45,48 +46,29 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include <string.h>
+#include <stdbool.h>
+
+
+static void Run(void) {
+	for (;;) {
+		Term1_SendStr("Type in the letters 'r', 'g' or 'b'\r\n");
+	}
+}
+
+
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
-byte c, err;
-char *str = "INPUT ERROR \r\n";
-int len;
-static int i;
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
-  for (;;){
-	  do {
-		  err = AS1_RecvChar(&c);
-	  }	while (err != ERR_OK);
-	  if (strcmp(, 'r')){
-		  redLED_NegVal();
-	  }
-	  else if (strcmp(c,'g')){
-		  greenLED_NegVal();
-	  }
-	  else if (strcmp(c, 'b')){
-		  blueLED_NegVal();
-
-	  }
-	  else {
-		  void send_string(char *str){
-			  size_t len;
-			  len = strlen(str);
-			  for (i=0; i < len; i++){
-				  do {
-					  err = AS1_SendChar(str[i]);
-				  } while (err != ERR_OK);
-			  }
-		  }
-	  }
-  }
+  Run();
 
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/

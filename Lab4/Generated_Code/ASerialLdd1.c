@@ -7,7 +7,7 @@
 **     Version     : Component 01.188, Driver 01.12, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-25, 21:40, # CodeGen: 2
+**     Date/Time   : 2017-08-26, 02:30, # CodeGen: 8
 **     Abstract    :
 **         This component "Serial_LDD" implements an asynchronous serial
 **         communication. The component supports different settings of
@@ -61,7 +61,6 @@
 **         SendBlock          - LDD_TError ASerialLdd1_SendBlock(LDD_TDeviceData *DeviceDataPtr, LDD_TData...
 **         ReceiveBlock       - LDD_TError ASerialLdd1_ReceiveBlock(LDD_TDeviceData *DeviceDataPtr, LDD_TData...
 **         GetError           - LDD_TError ASerialLdd1_GetError(LDD_TDeviceData *DeviceDataPtr,...
-**         GetSentDataNum     - uint16_t ASerialLdd1_GetSentDataNum(LDD_TDeviceData *DeviceDataPtr);
 **         GetReceivedDataNum - uint16_t ASerialLdd1_GetReceivedDataNum(LDD_TDeviceData *DeviceDataPtr);
 **         Main               - void ASerialLdd1_Main(LDD_TDeviceData *DeviceDataPtr);
 **
@@ -117,7 +116,7 @@
 
 /* {Default RTOS Adapter} No RTOS includes */
 #include "ASerialLdd1.h"
-#include "AS1.h"
+#include "Inhr1.h"
 #include "UART_PDD.h"
 #include "SIM_PDD.h"
 
@@ -347,27 +346,6 @@ uint16_t ASerialLdd1_GetReceivedDataNum(LDD_TDeviceData *DeviceDataPtr)
   ASerialLdd1_TDeviceDataPtr DeviceDataPrv = (ASerialLdd1_TDeviceDataPtr)DeviceDataPtr;
 
   return (DeviceDataPrv->InpRecvDataNum); /* Return the number of received characters. */
-}
-
-/*
-** ===================================================================
-**     Method      :  ASerialLdd1_GetSentDataNum (component Serial_LDD)
-*/
-/*!
-**     @brief
-**         Returns the number of sent characters.
-**     @param
-**         DeviceDataPtr   - Device data structure
-**                           pointer returned by [Init] method.
-**     @return
-**                         - The number of sent characters.
-*/
-/* ===================================================================*/
-uint16_t ASerialLdd1_GetSentDataNum(LDD_TDeviceData *DeviceDataPtr)
-{
-  ASerialLdd1_TDeviceDataPtr DeviceDataPrv = (ASerialLdd1_TDeviceDataPtr)DeviceDataPtr;
-
-  return (DeviceDataPrv->OutSentDataNum); /* Return the number of sent characters. */
 }
 
 /*
