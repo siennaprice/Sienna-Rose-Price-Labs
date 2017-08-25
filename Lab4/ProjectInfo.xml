@@ -55,12 +55,12 @@
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd3.c</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BlueLED.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\Cpu.c</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\GreenLED.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\PE_LDD.c</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\RedLED.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\Vectors.c</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\blueLED.c</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\greenLED.c</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\redLED.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Sources\Events.c</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Sources\main.c</PathName>
@@ -71,15 +71,15 @@
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BitIoLdd3.h</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\BlueLED.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\Cpu.h</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\GreenLED.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\PE_Const.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\PE_Types.h</PathName>
-      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\RedLED.h</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\blueLED.h</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\greenLED.h</PathName>
+      <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Generated_Code\redLED.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Sources\Events.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Static_Code\IO_Map\MK20D5.h</PathName>
       <PathName>C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Static_Code\PDD\ADC_PDD.h</PathName>

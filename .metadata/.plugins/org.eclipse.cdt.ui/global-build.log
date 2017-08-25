@@ -16,3 +16,328 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
          ^
 Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
+20:34:14 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:54:13: warning: initialization makes integer from pointer without a cast [enabled by default]
+  char str = "Not Computable";
+             ^
+../Sources/main.c: At top level:
+../Sources/main.c:98:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:98:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:05:47 **** Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:55:14: warning: character constant too long for its type [enabled by default]
+ char str[] = 'INPUT ERROR \r\n';
+              ^
+../Sources/main.c:55:1: error: invalid initializer
+ char str[] = 'INPUT ERROR \r\n';
+ ^
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:79:11: error: 'i' undeclared (first use in this function)
+      for (i=0; i < len; i++){
+           ^
+../Sources/main.c:79:11: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:79:18: warning: comparison between pointer and integer [enabled by default]
+      for (i=0; i < len; i++){
+                  ^
+../Sources/main.c:79:26: error: lvalue required as increment operand
+      for (i=0; i < len; i++){
+                          ^
+../Sources/main.c:81:30: error: array subscript is not an integer
+        err = AS1_SendChar(str[i]);
+                              ^
+../Sources/main.c:81:8: warning: passing argument 1 of 'AS1_SendChar' makes integer from pointer without a cast [enabled by default]
+        err = AS1_SendChar(str[i]);
+        ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/main.c:32:
+C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code/AS1.h:195:6: note: expected 'AS1_TComData' but argument is of type 'char *'
+ byte AS1_SendChar(AS1_TComData Chr);
+      ^
+../Sources/main.c: At top level:
+../Sources/main.c:96:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:96:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:98:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:11:11 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:83:31: error: expected expression before 'int'
+        err = AS1_SendChar(str[int i]);
+                               ^
+../Sources/main.c: At top level:
+../Sources/main.c:98:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:98:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:100:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:11:57 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:83:31: error: expected expression before 'int'
+        err = AS1_SendChar(str[int i]);
+                               ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:12:37 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/AS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+Finished building: ../Generated_Code/AS1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BitIoLdd3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd3.d" -MT"Generated_Code/BitIoLdd3.o" -c -o "Generated_Code/BitIoLdd3.o" "../Generated_Code/BitIoLdd3.c"
+Finished building: ../Generated_Code/BitIoLdd3.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building file: ../Generated_Code/blueLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/blueLED.d" -MT"Generated_Code/blueLED.o" -c -o "Generated_Code/blueLED.o" "../Generated_Code/blueLED.c"
+Finished building: ../Generated_Code/blueLED.c
+ 
+Building file: ../Generated_Code/greenLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/greenLED.d" -MT"Generated_Code/greenLED.o" -c -o "Generated_Code/greenLED.o" "../Generated_Code/greenLED.c"
+Finished building: ../Generated_Code/greenLED.c
+ 
+Building file: ../Generated_Code/redLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/redLED.d" -MT"Generated_Code/redLED.o" -c -o "Generated_Code/redLED.o" "../Generated_Code/redLED.c"
+Finished building: ../Generated_Code/redLED.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
+22:24:29 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:68:15: error: invalid type argument of unary '*' (have 'int')
+    if (strcmp(*c, 'r')){
+               ^
+../Sources/main.c:68:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    if (strcmp(*c, 'r')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:71:20: error: invalid type argument of unary '*' (have 'int')
+    else if (strcmp(*c,'g')){
+                    ^
+../Sources/main.c:71:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(*c,'g')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:74:20: error: invalid type argument of unary '*' (have 'int')
+    else if (strcmp(*c, 'b')){
+                    ^
+../Sources/main.c:74:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(*c, 'b')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:25:01 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:68:4: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    if (strcmp(c, 'r')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'byte'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:68:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    if (strcmp(c, 'r')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:71:4: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(c,'g')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'byte'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:71:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(c,'g')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:74:4: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(c, 'b')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'byte'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:74:4: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [enabled by default]
+    else if (strcmp(c, 'b')){
+    ^
+In file included from c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:10:0,
+                 from ../Sources/main.c:47:
+c:\freescale\kds_v3\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'int'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BitIoLdd3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd3.d" -MT"Generated_Code/BitIoLdd3.o" -c -o "Generated_Code/BitIoLdd3.o" "../Generated_Code/BitIoLdd3.c"
+Finished building: ../Generated_Code/BitIoLdd3.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building file: ../Generated_Code/blueLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/blueLED.d" -MT"Generated_Code/blueLED.o" -c -o "Generated_Code/blueLED.o" "../Generated_Code/blueLED.c"
+Finished building: ../Generated_Code/blueLED.c
+ 
+Building file: ../Generated_Code/greenLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/greenLED.d" -MT"Generated_Code/greenLED.o" -c -o "Generated_Code/greenLED.o" "../Generated_Code/greenLED.c"
+Finished building: ../Generated_Code/greenLED.c
+ 
+Building file: ../Generated_Code/redLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/redLED.d" -MT"Generated_Code/redLED.o" -c -o "Generated_Code/redLED.o" "../Generated_Code/redLED.c"
+Finished building: ../Generated_Code/redLED.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
