@@ -424,3 +424,99 @@ make: Nothing to be done for 'all'.
 02:49:42 **** Incremental Build of configuration Debug for project Lab4 ****
 make all 
 make: Nothing to be done for 'all'.
+03:18:09 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:20:39 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:26:26 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:27:27 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:27:56 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+03:31:40 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
+03:35:55 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
+03:37:36 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'Run':
+../Sources/main.c:55:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+   Term1_SendStr(*str);
+   ^
+In file included from ../Sources/Events.h:43:0,
+                 from ../Sources/main.c:32:
+C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code/Term1.h:135:6: note: expected 'void *' but argument is of type 'char'
+ void Term1_SendStr(void *str);
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
+03:38:33 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:53:8: warning: return type defaults to 'int' [enabled by default]
+ static Run(void) {
+        ^
+../Sources/main.c: In function 'Run':
+../Sources/main.c:55:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+   Term1_SendStr(*str);
+   ^
+In file included from ../Sources/Events.h:43:0,
+                 from ../Sources/main.c:32:
+C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code/Term1.h:135:6: note: expected 'void *' but argument is of type 'char'
+ void Term1_SendStr(void *str);
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 
+03:40:39 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/blueLED.o ./Generated_Code/greenLED.o ./Generated_Code/redLED.o   
+Finished building target: Lab4.elf
+ 

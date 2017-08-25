@@ -21,7 +21,7 @@
   </ToolchainSettings>
   <GeneratedFilesList>
     <GeneratedByPE>
-      <File Name="Documentation/Lab4_SIGNALS.txt" FileDate="2017-08-26, 02:49:29" FileAge="1503679769946" FileType="3072" />
+      <File Name="Documentation/Lab4_SIGNALS.txt" FileDate="2017-08-26, 03:28:18" FileAge="1503682098958" FileType="3072" />
       <File Name="Static_Code/PDD/PIT_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345132" FileType="1048576" />
       <File Name="Generated_Code/Inhr1.h" FileDate="2017-08-26, 02:30:08" FileAge="1503678608262" FileType="45637" CompNumb="14" />
       <File Name="Generated_Code/ASerialLdd1.h" FileDate="2017-08-26, 02:30:08" FileAge="1503678608340" FileType="45637" CompNumb="15" />
@@ -78,8 +78,8 @@
       <File Name="Static_Code/PDD/SAI_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345156" FileType="1048576" />
       <File Name="Static_Code/PDD/DMA_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345044" FileType="1048576" />
       <File Name="Static_Code/PDD/SPI_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345171" FileType="1048576" />
-      <File Name="Generated_Code/Term1.c" FileDate="2017-08-26, 02:30:08" FileAge="1503678608222" FileType="45637" CompNumb="13" />
       <File Name="Static_Code/PDD/EWM_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345052" FileType="1048576" />
+      <File Name="Generated_Code/Term1.c" FileDate="2017-08-26, 02:30:08" FileAge="1503678608222" FileType="45637" CompNumb="13" />
       <File Name="Project_Settings/Startup_Code/startup.c" FileDate="2017-08-25, 20:35:44" FileAge="1503657344695" FileType="16384" CompNumb="4" />
       <File Name="Static_Code/PDD/SIM_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345164" FileType="1048576" />
       <File Name="Static_Code/PDD/ADC_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345002" FileType="1048576" />
@@ -97,5 +97,5 @@
       <File Name="Static_Code/PDD/PDB_PDD.h" FileDate="2017-08-25, 20:35:45" FileAge="1503657345124" FileType="1048576" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>10</CodeGenReference>
+  <CodeGenReference>12</CodeGenReference>
 </CodeGenerationInfo>

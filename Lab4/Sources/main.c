@@ -49,6 +49,7 @@
 #include <stdbool.h>
 
 
+
 static void Run(void) {
 	for (;;) {
 		Term1_SendStr("Type in the letters 'r', 'g' or 'b'\r\n");
