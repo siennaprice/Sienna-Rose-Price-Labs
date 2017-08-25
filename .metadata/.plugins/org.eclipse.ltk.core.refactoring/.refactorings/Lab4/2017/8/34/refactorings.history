@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;subdir.mk&apos; to &apos;Sources&apos;" description="Move &apos;subdir.mk&apos; to &apos;Sources&apos;" destination="Debug/Sources" element1="Debug/subdir.mk" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1503656876528" updateReferences="true"/>
+</session>
