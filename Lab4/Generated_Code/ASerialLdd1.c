@@ -7,7 +7,7 @@
 **     Version     : Component 01.188, Driver 01.12, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-26, 02:30, # CodeGen: 8
+**     Date/Time   : 2017-08-27, 21:14, # CodeGen: 13
 **     Abstract    :
 **         This component "Serial_LDD" implements an asynchronous serial
 **         communication. The component supports different settings of
@@ -32,10 +32,10 @@
 **            Receiver input                               : Not inverted
 **            Break generation length                      : 10/11 bits
 **            Receiver                                     : Enabled
-**              RxD                                        : ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FTM0_FLT0
+**              RxD                                        : TSI0_CH9/PTB16/UART0_RX/EWM_IN
 **              RxD pin signal                             : 
 **            Transmitter                                  : Enabled
-**              TxD                                        : PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1
+**              TxD                                        : TSI0_CH10/PTB17/UART0_TX/EWM_OUT_b
 **              TxD pin signal                             : 
 **            Flow control                                 : None
 **          Initialization                                 : 
@@ -61,6 +61,7 @@
 **         SendBlock          - LDD_TError ASerialLdd1_SendBlock(LDD_TDeviceData *DeviceDataPtr, LDD_TData...
 **         ReceiveBlock       - LDD_TError ASerialLdd1_ReceiveBlock(LDD_TDeviceData *DeviceDataPtr, LDD_TData...
 **         GetError           - LDD_TError ASerialLdd1_GetError(LDD_TDeviceData *DeviceDataPtr,...
+**         GetSentDataNum     - uint16_t ASerialLdd1_GetSentDataNum(LDD_TDeviceData *DeviceDataPtr);
 **         GetReceivedDataNum - uint16_t ASerialLdd1_GetReceivedDataNum(LDD_TDeviceData *DeviceDataPtr);
 **         Main               - void ASerialLdd1_Main(LDD_TDeviceData *DeviceDataPtr);
 **
@@ -116,7 +117,7 @@
 
 /* {Default RTOS Adapter} No RTOS includes */
 #include "ASerialLdd1.h"
-#include "Inhr1.h"
+#include "AS1.h"
 #include "UART_PDD.h"
 #include "SIM_PDD.h"
 
@@ -169,20 +170,20 @@ LDD_TDeviceData* ASerialLdd1_Init(LDD_TUserData *UserDataPtr)
   DeviceDataPrv->UserDataPtr = UserDataPtr; /* Store the RTOS device structure */
   /* SIM_SCGC4: UART0=1 */
   SIM_SCGC4 |= SIM_SCGC4_UART0_MASK;
-  /* PORTD_PCR6: ISF=0,MUX=3 */
-  PORTD_PCR6 = (uint32_t)((PORTD_PCR6 & (uint32_t)~(uint32_t)(
-                PORT_PCR_ISF_MASK |
-                PORT_PCR_MUX(0x04)
-               )) | (uint32_t)(
-                PORT_PCR_MUX(0x03)
-               ));
-  /* PORTD_PCR7: ISF=0,MUX=3 */
-  PORTD_PCR7 = (uint32_t)((PORTD_PCR7 & (uint32_t)~(uint32_t)(
-                PORT_PCR_ISF_MASK |
-                PORT_PCR_MUX(0x04)
-               )) | (uint32_t)(
-                PORT_PCR_MUX(0x03)
-               ));
+  /* PORTB_PCR16: ISF=0,MUX=3 */
+  PORTB_PCR16 = (uint32_t)((PORTB_PCR16 & (uint32_t)~(uint32_t)(
+                 PORT_PCR_ISF_MASK |
+                 PORT_PCR_MUX(0x04)
+                )) | (uint32_t)(
+                 PORT_PCR_MUX(0x03)
+                ));
+  /* PORTB_PCR17: ISF=0,MUX=3 */
+  PORTB_PCR17 = (uint32_t)((PORTB_PCR17 & (uint32_t)~(uint32_t)(
+                 PORT_PCR_ISF_MASK |
+                 PORT_PCR_MUX(0x04)
+                )) | (uint32_t)(
+                 PORT_PCR_MUX(0x03)
+                ));
   UART_PDD_EnableTransmitter(UART0_BASE_PTR, PDD_DISABLE); /* Disable transmitter. */
   UART_PDD_EnableReceiver(UART0_BASE_PTR, PDD_DISABLE); /* Disable receiver. */
   DeviceDataPrv->SerFlag = 0x00U;      /* Reset flags */
@@ -346,6 +347,27 @@ uint16_t ASerialLdd1_GetReceivedDataNum(LDD_TDeviceData *DeviceDataPtr)
   ASerialLdd1_TDeviceDataPtr DeviceDataPrv = (ASerialLdd1_TDeviceDataPtr)DeviceDataPtr;
 
   return (DeviceDataPrv->InpRecvDataNum); /* Return the number of received characters. */
+}
+
+/*
+** ===================================================================
+**     Method      :  ASerialLdd1_GetSentDataNum (component Serial_LDD)
+*/
+/*!
+**     @brief
+**         Returns the number of sent characters.
+**     @param
+**         DeviceDataPtr   - Device data structure
+**                           pointer returned by [Init] method.
+**     @return
+**                         - The number of sent characters.
+*/
+/* ===================================================================*/
+uint16_t ASerialLdd1_GetSentDataNum(LDD_TDeviceData *DeviceDataPtr)
+{
+  ASerialLdd1_TDeviceDataPtr DeviceDataPrv = (ASerialLdd1_TDeviceDataPtr)DeviceDataPtr;
+
+  return (DeviceDataPrv->OutSentDataNum); /* Return the number of sent characters. */
 }
 
 /*

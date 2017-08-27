@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-26, 02:30, # CodeGen: 8
+**     Date/Time   : 2017-08-27, 21:14, # CodeGen: 13
 **     Abstract    :
 **
 **     Settings    :
@@ -300,8 +300,7 @@
 #include "BitIoLdd2.h"
 #include "blueLED.h"
 #include "BitIoLdd3.h"
-#include "Term1.h"
-#include "Inhr1.h"
+#include "AS1.h"
 #include "ASerialLdd1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -389,9 +388,10 @@ void __init_hardware(void)
   SIM_CLKDIV1 = SIM_CLKDIV1_OUTDIV1(0x00) |
                 SIM_CLKDIV1_OUTDIV2(0x01) |
                 SIM_CLKDIV1_OUTDIV4(0x03); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTD=1,PORTC=1,PORTA=1 */
+  /* SIM_SCGC5: PORTD=1,PORTC=1,PORTB=1,PORTA=1 */
   SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK |
                SIM_SCGC5_PORTC_MASK |
+               SIM_SCGC5_PORTB_MASK |
                SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
@@ -517,9 +517,8 @@ void PE_low_level_init(void)
   (void)BitIoLdd2_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd3_Init(NULL);
-  /* ### Asynchro serial "Inhr1" init code ... */
-  Inhr1_Init();
-  /* ###  "Term1" init code ... */
+  /* ### Asynchro serial "AS1" init code ... */
+  AS1_Init();
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

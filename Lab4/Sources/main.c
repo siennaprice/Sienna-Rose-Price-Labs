@@ -37,8 +37,7 @@
 #include "BitIoLdd2.h"
 #include "blueLED.h"
 #include "BitIoLdd3.h"
-#include "Term1.h"
-#include "Inhr1.h"
+#include "AS1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -48,14 +47,19 @@
 #include <string.h>
 #include <stdbool.h>
 
+static char str = "Send r, g or b";
+static int i;
+static byte c, err;
 
-
-static void Run(void) {
-	for (;;) {
-		Term1_SendStr("Type in the letters 'r', 'g' or 'b'\r\n");
+void send_string(char *str){
+	size_t len;
+	len = strlen(str);
+	for (i = 0; i < len; i++) {
+		do {
+			err = AS1_SendChar(str[i]);
+		} while (err == ERR_OK);
 	}
 }
-
 
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -63,13 +67,38 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
+char str;
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
-  Run();
+for (;;) {
+
+	err = AS1_RecvChar(&c);
+	while (err == ERR_OK) {
+
+		if (c == 'r') {
+			redLED_NegVal();
+		}
+		else if (c == 'g') {
+			greenLED_NegVal();
+		}
+		else if (c == 'b') {
+			blueLED_NegVal();
+		}
+		else {
+			send_string(&str);
+		}
+		}
+
+	do {
+		err = AS1_SendChar(c);
+	} while (err != ERR_OK);
+
+	}
+
 
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
