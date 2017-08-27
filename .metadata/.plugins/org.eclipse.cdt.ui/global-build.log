@@ -1920,3 +1920,261 @@ Invoking: Cross ARM C++ Linker
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
 Finished building target: Lab4.elf
  
+03:11:13 **** Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/Bit1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Bit1.d" -MT"Generated_Code/Bit1.o" -c -o "Generated_Code/Bit1.o" "../Generated_Code/Bit1.c"
+Finished building: ../Generated_Code/Bit1.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/Bit1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:23:28 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:57:4: error: 'f' undeclared (first use in this function)
+    f = FloatP_GetVal();
+    ^
+../Sources/main.c:57:4: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:58:13: warning: multi-character character constant [-Wmultichar]
+    if (f == 'true') {
+             ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+03:25:52 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:57:4: error: 'f' undeclared (first use in this function)
+    f = FloatP_GetVal();
+    ^
+../Sources/main.c:57:4: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:58:13: warning: multi-character character constant [-Wmultichar]
+    if (f == 'true') {
+             ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+03:28:09 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:58:24: warning: comparison between pointer and integer [enabled by default]
+    if (FloatP_GetVal() == "1") {
+                        ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BlueLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BlueLED.d" -MT"Generated_Code/BlueLED.o" -c -o "Generated_Code/BlueLED.o" "../Generated_Code/BlueLED.c"
+Finished building: ../Generated_Code/BlueLED.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/FloatP.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/FloatP.d" -MT"Generated_Code/FloatP.o" -c -o "Generated_Code/FloatP.o" "../Generated_Code/FloatP.c"
+Finished building: ../Generated_Code/FloatP.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:29:05 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:58:27: warning: multi-character character constant [-Wmultichar]
+    if (FloatP_GetVal() == 'true') {
+                           ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:29:53 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:30:14 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:31:41 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:33:36 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:42:00 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BlueLED.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BlueLED.d" -MT"Generated_Code/BlueLED.o" -c -o "Generated_Code/BlueLED.o" "../Generated_Code/BlueLED.c"
+Finished building: ../Generated_Code/BlueLED.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:42:31 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:58:27: warning: character constant too long for its type [enabled by default]
+    if (FloatP_GetVal() == 'FALSE') {
+                           ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:43:33 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab5.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab5/Project_Settings/Linker_Files" -Wl,-Map,"Lab5.map" -specs=nano.specs -specs=nosys.specs -o "Lab5.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/FloatP.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab5.elf
+ 
+03:44:09 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:44:31 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:45:28 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:46:07 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:46:12 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
+03:46:53 **** Incremental Build of configuration Debug for project Lab5 ****
+make all 
+make: Nothing to be done for 'all'.
