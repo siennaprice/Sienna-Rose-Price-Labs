@@ -2807,3 +2807,9 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2017-08-27 22:18:19.614
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-08-27 22:19:49.463
+!MESSAGE Indexed 'Lab4' (6 sources, 66 headers) in 2.37 sec: 3,295 declarations; 7,409 references; 0 unresolved inclusions; 28 syntax errors; 0 unresolved names (0%)
