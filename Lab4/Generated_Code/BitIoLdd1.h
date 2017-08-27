@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-27, 22:22, # CodeGen: 1
+**     Date/Time   : 2017-08-27, 22:37, # CodeGen: 4
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -32,6 +32,7 @@
 **         PutVal - void BitIoLdd1_PutVal(LDD_TDeviceData *DeviceDataPtr, bool Val);
 **         ClrVal - void BitIoLdd1_ClrVal(LDD_TDeviceData *DeviceDataPtr);
 **         SetVal - void BitIoLdd1_SetVal(LDD_TDeviceData *DeviceDataPtr);
+**         NegVal - void BitIoLdd1_NegVal(LDD_TDeviceData *DeviceDataPtr);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -115,6 +116,7 @@ extern "C" {
 #define BitIoLdd1_PutVal_METHOD_ENABLED /*!< PutVal method of the component BitIoLdd1 is enabled (generated) */
 #define BitIoLdd1_ClrVal_METHOD_ENABLED /*!< ClrVal method of the component BitIoLdd1 is enabled (generated) */
 #define BitIoLdd1_SetVal_METHOD_ENABLED /*!< SetVal method of the component BitIoLdd1 is enabled (generated) */
+#define BitIoLdd1_NegVal_METHOD_ENABLED /*!< NegVal method of the component BitIoLdd1 is enabled (generated) */
 
 /* Definition of implementation constants */
 #define BitIoLdd1_MODULE_BASE_ADDRESS PTA_BASE_PTR /*!< Name of macro used as the base address */
@@ -245,6 +247,22 @@ void BitIoLdd1_ClrVal(LDD_TDeviceData *DeviceDataPtr);
 */
 /* ===================================================================*/
 void BitIoLdd1_SetVal(LDD_TDeviceData *DeviceDataPtr);
+
+/*
+** ===================================================================
+**     Method      :  BitIoLdd1_NegVal (component BitIO_LDD)
+*/
+/*!
+**     @brief
+**         Negates (inverts) the output value. It is equivalent to the
+**         [PutVal(!GetVal())]. This method is available only if the
+**         direction = _[output]_ or _[input/output]_.
+**     @param
+**         DeviceDataPtr   - Pointer to device data
+**                           structure returned by <Init> method.
+*/
+/* ===================================================================*/
+void BitIoLdd1_NegVal(LDD_TDeviceData *DeviceDataPtr);
 
 /* END BitIoLdd1. */
 

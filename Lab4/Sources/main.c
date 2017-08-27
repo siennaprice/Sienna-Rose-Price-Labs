@@ -44,19 +44,44 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
+#include <stdbool.h>
+#include "string.h"
+
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
-
+byte c, err;
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
-  /* For example: for(;;) { } */
+for (;;) {
+	do {
+		err = AS1_RecvChar(&c);
+	} while (err != ERR_OK);
+
+	do {
+		if (c == 'r') {
+		err = AS1_SendChar(c);
+		RedLED_NegVal();
+		}
+		else if (c == 'g') {
+		err = AS1_SendChar(c);
+		GreenLED_NegVal();
+		}
+		else if (c == 'b') {
+		err = AS1_SendChar(c);
+		BlueLED_NegVal();
+		}
+		else {
+		err = AS1_SendChar('N');
+		}
+		} while (err != ERR_OK);
+}
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

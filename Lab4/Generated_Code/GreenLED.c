@@ -7,7 +7,7 @@
 **     Version     : Component 02.086, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-27, 22:22, # CodeGen: 1
+**     Date/Time   : 2017-08-27, 22:37, # CodeGen: 4
 **     Abstract    :
 **         This component "BitIO" implements an one-bit input/output.
 **         It uses one bit/pin of a port.
@@ -30,6 +30,7 @@
 **         PutVal - void GreenLED_PutVal(bool Val);
 **         ClrVal - void GreenLED_ClrVal(void);
 **         SetVal - void GreenLED_SetVal(void);
+**         NegVal - void GreenLED_NegVal(void);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -190,6 +191,28 @@ void GreenLED_ClrVal(void)
 */
 /*
 void GreenLED_SetVal(void)
+
+**  This method is implemented as a macro. See GreenLED.h file.  **
+*/
+
+/*
+** ===================================================================
+**     Method      :  GreenLED_NegVal (component BitIO)
+**     Description :
+**         This method negates (inverts) the output value.
+**           a) direction = Input  : inverts the output value;
+**                                   this operation will be shown on
+**                                   output after the direction has
+**                                   been switched to output
+**                                   (SetDir(TRUE);)
+**           b) direction = Output : directly inverts the value
+**                                   of the appropriate pin
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+/*
+void GreenLED_NegVal(void)
 
 **  This method is implemented as a macro. See GreenLED.h file.  **
 */
