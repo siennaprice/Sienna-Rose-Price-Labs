@@ -45,7 +45,25 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include <stdbool.h>
-#include "string.h"
+#include "strings.h"
+
+
+
+static int i;
+static byte err;
+char *str;
+
+void send_string(char *str) {
+	int len;
+	len = strlen(str);
+	for (i = 0; i < len; i++) {
+
+		do {
+			err = AS1_SendChar(str[i]);
+		} while (err != ERR_OK);
+	}
+}
+
 
 
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
@@ -53,15 +71,19 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
-byte c, err;
+byte c;
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
 for (;;) {
+	send_string("\nType r, g or b to toggle red, green or blue LEDs \r\n");
 	do {
+
 		err = AS1_RecvChar(&c);
+
+
 	} while (err != ERR_OK);
 
 	do {
@@ -78,7 +100,8 @@ for (;;) {
 		BlueLED_NegVal();
 		}
 		else {
-		err = AS1_SendChar('N');
+
+		send_string("Invalid Input \r\n");
 		}
 		} while (err != ERR_OK);
 }

@@ -958,3 +958,965 @@ Finished building target: Lab4.elf
 22:37:16 **** Incremental Build of configuration Debug for project Lab4 ****
 make all 
 make: Nothing to be done for 'all'.
+22:41:28 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+23:51:54 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:60:4: error: 'err' undeclared (first use in this function)
+    err = AS1_SendChar(str[i]);
+    ^
+../Sources/main.c:60:4: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c: In function 'main':
+../Sources/main.c:81:7: warning: assignment makes integer from pointer without a cast [enabled by default]
+   str = "Type r, g or b to toggle the red, green or blue LED's \r\n";
+       ^
+../Sources/main.c:82:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:54:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:105:8: warning: assignment makes integer from pointer without a cast [enabled by default]
+    str = "Invalid Input \r\n";
+        ^
+../Sources/main.c:106:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:54:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+23:54:28 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:14: warning: initialization makes integer from pointer without a cast [enabled by default]
+   char str = "Type r, g or b to toggle the red, green or blue LED's \r\n";
+              ^
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:106:15: warning: initialization makes integer from pointer without a cast [enabled by default]
+    char str = "Invalid Input \r\n";
+               ^
+../Sources/main.c:107:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+23:55:16 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:14: warning: initialization makes integer from pointer without a cast [enabled by default]
+   char str = "Type r, g or b to toggle the red, green or blue LED's \r\n";
+              ^
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:15: warning: initialization makes integer from pointer without a cast [enabled by default]
+    char str = "Invalid Input \r\n";
+               ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+23:56:57 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:51:19: warning: initialization makes integer from pointer without a cast [enabled by default]
+ static char str = "Invalid Input";
+                   ^
+../Sources/main.c:51:1: error: initializer element is not computable at load time
+ static char str = "Invalid Input";
+ ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:99:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+23:57:09 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:51:19: warning: initialization makes integer from pointer without a cast [enabled by default]
+ static char str = "Invalid Input";
+                   ^
+../Sources/main.c:51:1: error: initializer element is not computable at load time
+ static char str = "Invalid Input";
+ ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:99:3: warning: passing argument 1 of 'send_string' makes pointer from integer without a cast [enabled by default]
+   send_string(str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+23:59:35 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LED';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: error: too few arguments to function 'send_string'
+   send_string();
+   ^
+../Sources/main.c:55:6: note: declared here
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: error: too few arguments to function 'send_string'
+   send_string();
+   ^
+../Sources/main.c:55:6: note: declared here
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+00:00:04 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LED';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:01:04 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: error: expected ',' or ';' before 'send_string'
+   send_string(&str);
+   ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+00:01:17 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: error: expected ',' or ';' before 'send_string'
+   send_string(&str);
+   ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+00:01:30 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: error: expected ',' or ';' before 'send_string'
+   send_string(&str);
+   ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+00:02:34 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:03:57 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:04:29 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:04:41 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:07:14 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:08:31 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:10:45 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(&str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(&str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' from incompatible pointer type [enabled by default]
+  len = strlen(&str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char **'
+../Sources/main.c:61:4: warning: implicit declaration of function 'AS1_SendChar' [-Wimplicit-function-declaration]
+    err = AS1_SendChar(str[i]);
+    ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/AS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+Finished building: ../Generated_Code/AS1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+./Sources/main.o: In function `send_string':
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:61: undefined reference to `AS1_SendChar'
+./Sources/main.o: In function `main':
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:88: undefined reference to `AS1_SendChar'
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:92: undefined reference to `AS1_SendChar'
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:96: undefined reference to `AS1_SendChar'
+collect2.exe: error: ld returned 1 exit status
+makefile:53: recipe for target 'Lab4.elf' failed
+make: *** [Lab4.elf] Error 1
+00:11:08 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c:61:4: warning: implicit declaration of function 'AS1_SendChar' [-Wimplicit-function-declaration]
+    err = AS1_SendChar(str[i]);
+    ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+./Sources/main.o: In function `send_string':
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:61: undefined reference to `AS1_SendChar'
+./Sources/main.o: In function `main':
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:88: undefined reference to `AS1_SendChar'
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:92: undefined reference to `AS1_SendChar'
+C:\Users\Sienna\Documents\NewWorkSpace\Sienna-Rose-Price-Labs\Lab4\Debug/../Sources/main.c:96: undefined reference to `AS1_SendChar'
+collect2.exe: error: ld returned 1 exit status
+makefile:53: recipe for target 'Lab4.elf' failed
+make: *** [Lab4.elf] Error 1
+00:12:35 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/AS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+Finished building: ../Generated_Code/AS1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:13:10 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:14:44 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char* str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:15:36 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:82:15: warning: character constant too long for its type [enabled by default]
+   char *str = 'Type r, g or b to toggle red, green or blue LEDs \r\n';
+               ^
+../Sources/main.c:82:15: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:100:16: warning: character constant too long for its type [enabled by default]
+    char *str = 'Invalid Input \r\n';
+                ^
+../Sources/main.c:100:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:16:38 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:17:13 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char* str) {
+      ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char* str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:17:34 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:18:03 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char* str) {
+      ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char* str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:21:29 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:22:16 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(*str);
+        ^
+../Sources/main.c:57:2: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [enabled by default]
+  len = strlen(*str);
+  ^
+../Sources/main.c:57:2: note: expected 'const char *' but argument is of type 'char'
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:24:31 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:83:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:25:24 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:57:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:57:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:101:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:55:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:26:05 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:58:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:58:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:102:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:56:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:28:08 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:29:25 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:58:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:58:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+../Sources/main.c: In function 'main':
+../Sources/main.c:104:3: warning: passing argument 1 of 'send_string' from incompatible pointer type [enabled by default]
+   send_string(&str);
+   ^
+../Sources/main.c:56:6: note: expected 'char *' but argument is of type 'char **'
+ void send_string(char *str) {
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:30:30 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:58:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:58:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
+00:30:51 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+make: Nothing to be done for 'all'.
+00:33:09 **** Incremental Build of configuration Debug for project Lab4 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'send_string':
+../Sources/main.c:58:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  len = strlen(str);
+  ^
+../Sources/main.c:58:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+  len = strlen(str);
+        ^
+Finished building: ../Sources/main.c
+ 
+Building target: Lab4.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
+Finished building target: Lab4.elf
+ 
