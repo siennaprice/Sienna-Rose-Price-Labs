@@ -46,7 +46,7 @@
       </GenExtraFiles>
       <GenExtraFileSrcDir9>lib\Kinetis\startup\</GenExtraFileSrcDir9>
       <GenExtraFileSrcDir5>Repositories\lib\doxygen\</GenExtraFileSrcDir5>
-      <XtraAge6>1260133101</XtraAge6>
+      <XtraAge6>1260239884</XtraAge6>
       <XtraAge7>1260133101</XtraAge7>
       <XtraAge9>1260132525</XtraAge9>
       <XtraAge10>1260133101</XtraAge10>
@@ -360,7 +360,7 @@
     </GenFiles>
     <SignalListFile>Documentation\Lab5_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>4</ProjectModificationStamp>
+    <ProjectModificationStamp>5</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>false</Generated>
@@ -371,7 +371,7 @@
     <HeaderAge>-1</HeaderAge>
     <CodeAge>-1</CodeAge>
     <AsemblAge>-1</AsemblAge>
-    <GenNumMethods>14</GenNumMethods>
+    <GenNumMethods>11</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
     <GetClockConfiguration>false</GetClockConfiguration>
     <SetOperationMode>false</SetOperationMode>
@@ -379,9 +379,6 @@
     <DisableInt>false</DisableInt>
     <GetLLSWakeUpFlags>false</GetLLSWakeUpFlags>
     <OpenBackDoor>false</OpenBackDoor>
-    <GetFlexNVMPartitionCode>false</GetFlexNVMPartitionCode>
-    <SetFlexNVMPartition>false</SetFlexNVMPartition>
-    <SetFlexRAMFunction>false</SetFlexRAMFunction>
     <MCGAutoTrim>false</MCGAutoTrim>
     <VLPModeEnable>false</VLPModeEnable>
     <VLPModeDisable>false</VLPModeDisable>
@@ -441,7 +438,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1260132525</HeaderAge>
-    <CodeAge>1260133101</CodeAge>
+    <CodeAge>1260239884</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>14</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -624,8 +621,8 @@
     <GenComponentVersion>02.086</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1260133696</HeaderAge>
-    <CodeAge>1260133696</CodeAge>
+    <HeaderAge>1260239884</HeaderAge>
+    <CodeAge>1260239884</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>11</GenNumMethods>
     <GetDir>false</GetDir>
@@ -707,8 +704,8 @@
       <GenComponentVersion>01.033</GenComponentVersion>
       <GenDriverVersion>01.03</GenDriverVersion>
       <GenEventModule />
-      <HeaderAge>1260133693</HeaderAge>
-      <CodeAge>1260133693</CodeAge>
+      <HeaderAge>1260239884</HeaderAge>
+      <CodeAge>1260239884</CodeAge>
       <AsemblAge>-1</AsemblAge>
       <GenNumMethods>13</GenNumMethods>
       <Init>true</Init>

@@ -6,7 +6,7 @@
 **     Version     : Component 01.009, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-28, 03:23, # CodeGen: 2
+**     Date/Time   : 2017-08-29, 23:32, # CodeGen: 6
 **     Abstract    :
 **
 **     Settings    :
@@ -143,8 +143,8 @@ bool PE_PeripheralUsed(uint32_t PrphBaseAddress)
   switch (PrphBaseAddress) {
     /* Base address allocated by peripheral(s) PTC */
     case 0x400FF080UL:
-    /* Base address allocated by peripheral(s) PTA */
-    case 0x400FF000UL:
+    /* Base address allocated by peripheral(s) PTD */
+    case 0x400FF0C0UL:
       result = TRUE;
       break;
     default:

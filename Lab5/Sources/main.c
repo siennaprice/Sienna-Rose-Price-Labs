@@ -53,11 +53,18 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
+
+  PORTC_PCR0 = 0b00100000010;
+
+
   for (;;) {
-	  FloatP_GetVal();
-	  if (FloatP_GetVal() == '0') {
-		  BlueLED_SetVal();
-	  }
+
+		  if (FloatP_GetVal() == 0) {
+		  BlueLED_PutVal(1);
+		  }
+		  else {
+			  BlueLED_PutVal(0);
+		  }
 
   }
 

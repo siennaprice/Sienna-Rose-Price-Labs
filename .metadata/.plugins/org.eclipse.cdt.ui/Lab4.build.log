@@ -1,22 +1,6 @@
-00:33:09 **** Incremental Build of configuration Debug for project Lab4 ****
+01:54:42 **** Incremental Build of configuration Debug for project Lab4 ****
 make all 
-Building file: ../Sources/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c: In function 'send_string':
-../Sources/main.c:58:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  len = strlen(str);
-  ^
-../Sources/main.c:58:8: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
-  len = strlen(str);
-        ^
-Finished building: ../Sources/main.c
- 
-Building target: Lab4.elf
-Invoking: Cross ARM C++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/Lab4/Project_Settings/Linker_Files" -Wl,-Map,"Lab4.map" -specs=nano.specs -specs=nosys.specs -o "Lab4.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/PE_LDD.o ./Generated_Code/RedLED.o ./Generated_Code/Vectors.o   
-Finished building target: Lab4.elf
- 
+make: Nothing to be done for 'all'.
 
-00:33:10 Build Finished (took 695ms)
+01:54:42 Build Finished (took 244ms)
 
