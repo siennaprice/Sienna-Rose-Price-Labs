@@ -37,6 +37,13 @@
 #include "BitIoLdd1.h"
 #include "BlueLED.h"
 #include "BitIoLdd2.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
+#include "Blue.h"
+#include "PwmLdd1.h"
+#include "Green.h"
+#include "PwmLdd2.h"
+#include "TU2.h"
 
 #ifdef __cplusplus
 extern "C" {

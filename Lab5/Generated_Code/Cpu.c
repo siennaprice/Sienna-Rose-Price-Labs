@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-08-29, 23:32, # CodeGen: 6
+**     Date/Time   : 2017-09-02, 01:12, # CodeGen: 7
 **     Abstract    :
 **
 **     Settings    :
@@ -298,6 +298,13 @@
 #include "BitIoLdd1.h"
 #include "BlueLED.h"
 #include "BitIoLdd2.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
+#include "Blue.h"
+#include "PwmLdd1.h"
+#include "Green.h"
+#include "PwmLdd2.h"
+#include "TU2.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -384,9 +391,10 @@ void __init_hardware(void)
   SIM_CLKDIV1 = SIM_CLKDIV1_OUTDIV1(0x00) |
                 SIM_CLKDIV1_OUTDIV2(0x01) |
                 SIM_CLKDIV1_OUTDIV4(0x03); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTD=1,PORTC=1,PORTA=1 */
+  /* SIM_SCGC5: PORTD=1,PORTC=1,PORTB=1,PORTA=1 */
   SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK |
                SIM_SCGC5_PORTC_MASK |
+               SIM_SCGC5_PORTB_MASK |
                SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
@@ -510,6 +518,12 @@ void PE_low_level_init(void)
   (void)BitIoLdd1_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd2_Init(NULL);
+  /* ### Asynchro serial "AS1" init code ... */
+  AS1_Init();
+  /* ### PWM_LDD "PwmLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)PwmLdd1_Init(NULL);
+  /* ### PWM_LDD "PwmLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)PwmLdd2_Init(NULL);
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

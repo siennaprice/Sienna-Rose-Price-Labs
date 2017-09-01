@@ -34,6 +34,13 @@
 #include "BitIoLdd1.h"
 #include "BlueLED.h"
 #include "BitIoLdd2.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
+#include "Blue.h"
+#include "PwmLdd1.h"
+#include "Green.h"
+#include "PwmLdd2.h"
+#include "TU2.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -47,6 +54,10 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
+char letter;
+int redBright = 0;
+int greenBright = 0;
+
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
@@ -59,12 +70,32 @@ int main(void)
 
   for (;;) {
 
-		  if (FloatP_GetVal() == 0) {
+	  if (FloatP_GetVal() == 0) {
 		  BlueLED_PutVal(1);
+	  }
+	  else {
+		  BlueLED_PutVal(0);
+	  }
+
+	  if (AS1_RecvChar(&letter) == ERR_OK){
+		  if (letter == 'r'){
+			  redBright -= 1000;
 		  }
-		  else {
-			  BlueLED_PutVal(0);
+		  if (letter == 'R'){
+			  redBright -= 1000;
 		  }
+		  if (letter == 'g'){
+			  greenBright -= 1000;
+		  }
+		  if (letter == 'G'){
+			  greenBright -= 1000;
+		  }
+
+	  }
+
+	  Blue_SetRatio16(redBright);
+	  Green_SetRatio16(greenBright);
+
 
   }
 
