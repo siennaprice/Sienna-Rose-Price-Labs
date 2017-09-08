@@ -1,0 +1,19 @@
+20:47:35 **** Incremental Build of configuration Debug for project AssignmentDice_SiennaPrice ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/AssignmentDice_SiennaPrice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/AssignmentDice_SiennaPrice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/AssignmentDice_SiennaPrice/Sources" -I"C:/Users/Sienna/Documents/NewWorkSpace/Sienna-Rose-Price-Labs/AssignmentDice_SiennaPrice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:135:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:135:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:137:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+
+20:47:35 Build Finished (took 342ms)
+
