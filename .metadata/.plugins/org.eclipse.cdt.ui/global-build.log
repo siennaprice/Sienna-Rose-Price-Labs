@@ -40,3 +40,66 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
  ^
 Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
+22:35:15 **** Build of configuration Debug for project DiceAssignment ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:159:3: error: 'else' without a previous 'if'
+   else {
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:35:17 **** Incremental Build of configuration Debug for project DiceAssignment ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:159:3: error: 'else' without a previous 'if'
+   else {
+   ^
+../Sources/main.c: At top level:
+../Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+22:36:12 **** Incremental Build of configuration Debug for project DiceAssignment ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:174:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:174:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:176:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
