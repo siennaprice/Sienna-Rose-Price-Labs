@@ -395,10 +395,10 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/c
                 0x000001fd       0x1e c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/crtn.o
 OUTPUT(Lab1.elf elf32-littlearm)
 
-.debug_info     0x00000000      0x8fb
+.debug_info     0x00000000      0x910
  .debug_info    0x00000000      0x3e3 ./Sources/main.o
- .debug_info    0x000003e3       0xa3 ./Project_Settings/Startup_Code/startup_MK20D5.o
- .debug_info    0x00000486      0x475 ./Project_Settings/Startup_Code/system_MK20D5.o
+ .debug_info    0x000003e3       0xb8 ./Project_Settings/Startup_Code/startup_MK20D5.o
+ .debug_info    0x0000049b      0x475 ./Project_Settings/Startup_Code/system_MK20D5.o
 
 .debug_abbrev   0x00000000      0x227
  .debug_abbrev  0x00000000       0xf9 ./Sources/main.o
@@ -437,11 +437,11 @@ OUTPUT(Lab1.elf elf32-littlearm)
  .debug_line    0x00000209       0x86 ./Project_Settings/Startup_Code/startup_MK20D5.o
  .debug_line    0x0000028f      0x25d ./Project_Settings/Startup_Code/system_MK20D5.o
 
-.debug_str      0x00000000    0x3cf46
- .debug_str     0x00000000    0x3cda2 ./Sources/main.o
-                              0x3cf0b (size before relaxing)
- .debug_str     0x0003cda2      0x1a4 ./Project_Settings/Startup_Code/system_MK20D5.o
-                              0x24500 (size before relaxing)
+.debug_str      0x00000000    0x3cf5b
+ .debug_str     0x00000000    0x3cdb7 ./Sources/main.o
+                              0x3cf20 (size before relaxing)
+ .debug_str     0x0003cdb7      0x1a4 ./Project_Settings/Startup_Code/system_MK20D5.o
+                              0x24515 (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ./Sources/main.o

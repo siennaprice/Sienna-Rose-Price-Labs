@@ -1,4 +1,4 @@
-22:36:12 **** Incremental Build of configuration Debug for project DiceAssignment ****
+17:25:55 **** Incremental Build of configuration Debug for project DiceAssignment ****
 make all 
 Building file: ../Sources/main.c
 Invoking: Cross ARM C Compiler
@@ -12,8 +12,8 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
 ../Sources/main.c:176:1: error: expected identifier or '(' before '}' token
  } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
  ^
-Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+Sources/subdir.mk:24: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
 
-22:36:13 Build Finished (took 343ms)
+17:25:56 Build Finished (took 631ms)
 

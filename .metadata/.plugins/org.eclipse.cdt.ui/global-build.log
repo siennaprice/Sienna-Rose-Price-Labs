@@ -103,3 +103,164 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
  ^
 Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
+17:25:55 **** Incremental Build of configuration Debug for project DiceAssignment ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/DiceAssignment/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:174:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:174:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:176:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:24: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+17:27:05 **** Clean-only build of configuration Debug for project Lab1 ****
+make clean 
+rm -rf  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o  ./Sources/main.d  ./Project_Settings/Startup_Code/system_MK20D5.d  ./Project_Settings/Startup_Code/startup_MK20D5.d  Lab1.elf
+ 
+17:27:05 **** Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup_MK20D5.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D5.d" -MT"Project_Settings/Startup_Code/startup_MK20D5.o" -c -o "Project_Settings/Startup_Code/startup_MK20D5.o" "../Project_Settings/Startup_Code/startup_MK20D5.S"
+Finished building: ../Project_Settings/Startup_Code/startup_MK20D5.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_MK20D5.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MK20D5.d" -MT"Project_Settings/Startup_Code/system_MK20D5.o" -c -o "Project_Settings/Startup_Code/system_MK20D5.o" "../Project_Settings/Startup_Code/system_MK20D5.c"
+Finished building: ../Project_Settings/Startup_Code/system_MK20D5.c
+ 
+Building target: Lab1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/Lab1/Project_Settings/Linker_Files" -Wl,-Map,"Lab1.map" -specs=nano.specs -specs=nosys.specs -o "Lab1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+Finished building target: Lab1.elf
+ 
+17:34:08 **** Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/BitIoLdd3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd3.d" -MT"Generated_Code/BitIoLdd3.o" -c -o "Generated_Code/BitIoLdd3.o" "../Generated_Code/BitIoLdd3.c"
+Finished building: ../Generated_Code/BitIoLdd3.c
+ 
+Building file: ../Generated_Code/BitIoLdd4.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd4.d" -MT"Generated_Code/BitIoLdd4.o" -c -o "Generated_Code/BitIoLdd4.o" "../Generated_Code/BitIoLdd4.c"
+Finished building: ../Generated_Code/BitIoLdd4.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/LED1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/LED1.d" -MT"Generated_Code/LED1.o" -c -o "Generated_Code/LED1.o" "../Generated_Code/LED1.c"
+Finished building: ../Generated_Code/LED1.c
+ 
+Building file: ../Generated_Code/LED2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/LED2.d" -MT"Generated_Code/LED2.o" -c -o "Generated_Code/LED2.o" "../Generated_Code/LED2.c"
+Finished building: ../Generated_Code/LED2.c
+ 
+Building file: ../Generated_Code/LED3.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/LED3.d" -MT"Generated_Code/LED3.o" -c -o "Generated_Code/LED3.o" "../Generated_Code/LED3.c"
+Finished building: ../Generated_Code/LED3.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Sw1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Sw1.d" -MT"Generated_Code/Sw1.o" -c -o "Generated_Code/Sw1.o" "../Generated_Code/Sw1.c"
+Finished building: ../Generated_Code/Sw1.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building target: LabAssignmentDice.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Project_Settings/Linker_Files" -Wl,-Map,"LabAssignmentDice.map" -specs=nano.specs -specs=nosys.specs -o "LabAssignmentDice.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/BitIoLdd4.o ./Generated_Code/Cpu.o ./Generated_Code/LED1.o ./Generated_Code/LED2.o ./Generated_Code/LED3.o ./Generated_Code/PE_LDD.o ./Generated_Code/Sw1.o ./Generated_Code/Vectors.o   
+Finished building target: LabAssignmentDice.elf
+ 
+17:36:44 **** Incremental Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+../Sources/main.c: At top level:
+../Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+17:39:17 **** Incremental Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+../Sources/main.c: At top level:
+../Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
