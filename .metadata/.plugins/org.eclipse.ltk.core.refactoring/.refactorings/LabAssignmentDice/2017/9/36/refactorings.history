@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;LabAssignmentDice/Debug/Sources/copy subdir.mk&apos; to &apos;subdir.mk&apos;" description="Rename resource &apos;copy subdir.mk&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/Sources/copy subdir.mk" name="subdir.mk" stamp="1504942907873" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;LabAssignmentDice/Sources/Copy of main.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;Copy of main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sources/Copy of main.c" name="main.c" stamp="1504942943388" updateReferences="true"/>
+</session>
