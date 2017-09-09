@@ -264,3 +264,85 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -
  ^
 Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
 make: *** [Sources/main.o] Error 1
+17:43:32 **** Incremental Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../LabAssignmentDice/Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"LabAssignmentDice/Sources/Events.d" -MT"LabAssignmentDice/Sources/Events.o" -c -o "LabAssignmentDice/Sources/Events.o" "../LabAssignmentDice/Sources/Events.c"
+Finished building: ../LabAssignmentDice/Sources/Events.c
+ 
+Building file: ../LabAssignmentDice/Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"LabAssignmentDice/Sources/main.d" -MT"LabAssignmentDice/Sources/main.o" -c -o "LabAssignmentDice/Sources/main.o" "../LabAssignmentDice/Sources/main.c"
+../LabAssignmentDice/Sources/main.c: In function 'main':
+../LabAssignmentDice/Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+../LabAssignmentDice/Sources/main.c: At top level:
+../LabAssignmentDice/Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../LabAssignmentDice/Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../LabAssignmentDice/Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+LabAssignmentDice/Sources/subdir.mk:21: recipe for target 'LabAssignmentDice/Sources/main.o' failed
+make: *** [LabAssignmentDice/Sources/main.o] Error 1
+17:44:34 **** Incremental Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../LabAssignmentDice/Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"LabAssignmentDice/Sources/main.d" -MT"LabAssignmentDice/Sources/main.o" -c -o "LabAssignmentDice/Sources/main.o" "../LabAssignmentDice/Sources/main.c"
+../LabAssignmentDice/Sources/main.c: In function 'main':
+../LabAssignmentDice/Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+../LabAssignmentDice/Sources/main.c: At top level:
+../LabAssignmentDice/Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../LabAssignmentDice/Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../LabAssignmentDice/Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+LabAssignmentDice/Sources/subdir.mk:21: recipe for target 'LabAssignmentDice/Sources/main.o' failed
+make: *** [LabAssignmentDice/Sources/main.o] Error 1
+17:44:43 **** Incremental Build of configuration Debug for project LabAssignmentDice ****
+make all 
+Building file: ../LabAssignmentDice/Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/PDD" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Sources" -I"C:/Users/Sienna/Documents/Uni Work/CC2511-2017/NewWorkSpace/Sienna-Rose-Price-Labs/LabAssignmentDice/Generated_Code" -std=c99 -MMD -MP -MF"LabAssignmentDice/Sources/main.d" -MT"LabAssignmentDice/Sources/main.o" -c -o "LabAssignmentDice/Sources/main.o" "../LabAssignmentDice/Sources/main.c"
+../LabAssignmentDice/Sources/main.c: In function 'main':
+../LabAssignmentDice/Sources/main.c:149:5: warning: implicit declaration of function 'Switch1_GetVal' [-Wimplicit-function-declaration]
+     Switch1_GetVal();
+     ^
+../LabAssignmentDice/Sources/main.c: At top level:
+../LabAssignmentDice/Sources/main.c:175:3: error: expected identifier or '(' before 'for'
+   for(;;){}
+   ^
+../LabAssignmentDice/Sources/main.c:175:9: error: expected identifier or '(' before ')' token
+   for(;;){}
+         ^
+../LabAssignmentDice/Sources/main.c:177:1: error: expected identifier or '(' before '}' token
+ } /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+ ^
+LabAssignmentDice/Sources/subdir.mk:21: recipe for target 'LabAssignmentDice/Sources/main.o' failed
+make: *** [LabAssignmentDice/Sources/main.o] Error 1
