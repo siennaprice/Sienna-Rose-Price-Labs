@@ -524,3 +524,302 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-09-10 05:20:29.642 -----------------------------------------------
+eclipse.buildId=3.2.0.201603041649
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -data C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.core.resources 4 567 2017-09-10 05:20:31.055
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2017-09-10 05:20:31.055
+!MESSAGE Could not read metadata for 'RemoteSystemsTempFiles'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:884)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:864)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:715)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1565)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2464)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2219)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:447)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:391)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:136)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2017-09-10 05:20:31.056
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2017-09-10 05:20:36.522
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-09-10 05:20:36.781
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sienna'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-09-13 13:16:09.002 -----------------------------------------------
+eclipse.buildId=3.2.0.201603041649
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.somniumtech.branding.kds.ide -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.somniumtech.branding.kds.ide -showlocation
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-09-13 13:16:22.875
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Sienna'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2017-09-13 13:16:22.913
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY com.processorexpert.core.ide.wizard.ui 2 0 2017-09-13 13:16:28.989
+!MESSAGE External elements location C:\Freescale\KDS_v3\eclipse\ProcessorExpert\BoardConfigurations/wizard_data does not exist
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-09-13 13:17:29.788
+!MESSAGE Indexed 'AssignmentDice' (6 sources, 62 headers) in 2.42 sec: 2,392 declarations; 6,940 references; 0 unresolved inclusions; 28 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:20:29.559
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:20:29.559
+!MESSAGE C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:21:44.315
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:21:44.315
+!MESSAGE C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:22:04.564
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:22:04.564
+!MESSAGE C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:23:09.973
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:23:09.974
+!MESSAGE C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-09-13 14:24:21.445
+!MESSAGE Can't load preferences from file C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab5/.settings/language.settings.xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Internal error while trying to load XML document
+	at org.eclipse.cdt.internal.core.XmlUtil.loadXml(XmlUtil.java:264)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettings(LanguageSettingsProvidersSerializer.java:1145)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Lab5/.settings/language.settings.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.eclipse.cdt.internal.core.XmlUtil.loadXml(XmlUtil.java:257)
+	... 21 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2017-09-13 14:24:21.445
+!MESSAGE Internal error while trying to load XML document
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Lab5/.settings/language.settings.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:279)
+	at org.eclipse.cdt.internal.core.XmlUtil.loadXml(XmlUtil.java:257)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettings(LanguageSettingsProvidersSerializer.java:1145)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:437)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:419)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:413)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:406)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager.loadSettings(RefreshScopeManager.java:480)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1$1.visit(RefreshScopeManager.java:153)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$1.resourceChanged(RefreshScopeManager.java:141)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2017-09-13 14:24:21.445
+!MESSAGE Resource is out of sync with the file system: '/Lab5/.settings/language.settings.xml'.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:28:20.824
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-09-13 14:28:20.824
+!MESSAGE C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\AssignmentDice\Debug\AssignmentDice.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:298)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:124)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:86)
+	at com.pemicro.debug.gdbjtag.pne.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
