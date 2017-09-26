@@ -1,0 +1,9 @@
+13:14:27 **** Build of configuration Debug for project Lab7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Command canceled
+
+13:14:28 Build Cancelled (took 495ms)
+
