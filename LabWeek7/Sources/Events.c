@@ -71,7 +71,9 @@ void Cpu_OnNMIINT(void)
 */
 void Inhr1_OnRxChar(void)
 {
-  /* Write your code here ... */
+  volatile char buffer [100];
+  volatile unsigned int index = 0;
+  buffer[index] = 0;
 }
 
 /*
