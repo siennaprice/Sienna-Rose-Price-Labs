@@ -50,7 +50,9 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\AS1.c</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\ASerialLdd2.c</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\BlueLED.c</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\GreenLED.c</PathName>
@@ -68,7 +70,9 @@
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\AS1.h</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\ASerialLdd2.h</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\BlueLED.h</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\LabWeek7\Generated_Code\GreenLED.h</PathName>

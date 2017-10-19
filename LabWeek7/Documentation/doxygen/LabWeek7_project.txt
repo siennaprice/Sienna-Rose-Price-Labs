@@ -32,6 +32,7 @@
 - \subpage PwmLdd2
 - \subpage PwmLdd3
 - \subpage ASerialLdd1
+- \subpage ASerialLdd2
 
 */
 

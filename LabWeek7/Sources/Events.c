@@ -71,9 +71,22 @@ void Cpu_OnNMIINT(void)
 */
 void Inhr1_OnRxChar(void)
 {
-  volatile char buffer [100];
-  volatile unsigned int index = 0;
-  buffer[index] = 0;
+	extern volatile char buffer [100];
+	extern volatile unsigned int index = 0;
+void AS1_OnRxChar(void)
+	char c;
+	if (ERR_OK == AS1_RecvChar(&c)) {
+		buffer [index] = c; //save the character
+		index++; //increment the index
+		AS1_SendChar(c);
+		if (AS1_RecvChar(c) == '\n') {
+			buffer [index] = 0; //trailing null
+		}
+		if (AS1_RecvChar(c) == '\r') {
+			buffer [index] = 0; //trailing null
+		}
+	}
+}
 }
 
 /*
@@ -135,6 +148,42 @@ void BlueLED_OnEnd(void)
 ** ===================================================================
 */
 void RedLED_OnEnd(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnError (module Events)
+**
+**     Component   :  AS1 [AsynchroSerial]
+**     Description :
+**         This event is called when a channel error (not the error
+**         returned by a given method) occurs. The errors can be read
+**         using <GetError> method.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AS1_OnError(void)
+{
+  /* Write your code here ... */
+}
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnTxChar (module Events)
+**
+**     Component   :  AS1 [AsynchroSerial]
+**     Description :
+**         This event is called after a character is transmitted.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AS1_OnTxChar(void)
 {
   /* Write your code here ... */
 }

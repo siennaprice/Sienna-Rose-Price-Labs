@@ -43,6 +43,8 @@
 #include "Term1.h"
 #include "Inhr1.h"
 #include "ASerialLdd1.h"
+#include "AS1.h"
+#include "ASerialLdd2.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -134,6 +136,53 @@ void BlueLED_OnEnd(void);
 ** ===================================================================
 */
 void RedLED_OnEnd(void);
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnError (module Events)
+**
+**     Component   :  AS1 [AsynchroSerial]
+**     Description :
+**         This event is called when a channel error (not the error
+**         returned by a given method) occurs. The errors can be read
+**         using <GetError> method.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AS1_OnError(void);
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnRxChar (module Events)
+**
+**     Component   :  AS1 [AsynchroSerial]
+**     Description :
+**         This event is called after a correct character is received.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled and either the <Receiver>
+**         property is enabled or the <SCI output mode> property (if
+**         supported) is set to Single-wire mode.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AS1_OnRxChar(void);
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnTxChar (module Events)
+**
+**     Component   :  AS1 [AsynchroSerial]
+**     Description :
+**         This event is called after a character is transmitted.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AS1_OnTxChar(void);
 
 /* END Events */
 

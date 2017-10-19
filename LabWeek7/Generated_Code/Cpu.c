@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-10, 22:00, # CodeGen: 3
+**     Date/Time   : 2017-10-20, 06:12, # CodeGen: 5
 **     Abstract    :
 **
 **     Settings    :
@@ -304,6 +304,8 @@
 #include "Term1.h"
 #include "Inhr1.h"
 #include "ASerialLdd1.h"
+#include "AS1.h"
+#include "ASerialLdd2.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -405,8 +407,9 @@ void __init_hardware(void)
   SIM_CLKDIV1 = SIM_CLKDIV1_OUTDIV1(0x00) |
                 SIM_CLKDIV1_OUTDIV2(0x01) |
                 SIM_CLKDIV1_OUTDIV4(0x03); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTD=1,PORTC=1,PORTB=1,PORTA=1 */
-  SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK |
+  /* SIM_SCGC5: PORTE=1,PORTD=1,PORTC=1,PORTB=1,PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTE_MASK |
+               SIM_SCGC5_PORTD_MASK |
                SIM_SCGC5_PORTC_MASK |
                SIM_SCGC5_PORTB_MASK |
                SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
@@ -537,6 +540,8 @@ void PE_low_level_init(void)
   /* ### Asynchro serial "Inhr1" init code ... */
   Inhr1_Init();
   /* ###  "Term1" init code ... */
+  /* ### Asynchro serial "AS1" init code ... */
+  AS1_Init();
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }
