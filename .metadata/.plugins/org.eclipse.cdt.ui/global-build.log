@@ -685,3 +685,164 @@ Invoking: Cross ARM C++ Linker
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Project_Settings/Linker_Files" -Wl,-Map,"LabWeek7.map" -specs=nano.specs -specs=nosys.specs -o "LabWeek7.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/PwmLdd3.o ./Generated_Code/RedLED.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
 Finished building target: LabWeek7.elf
  
+06:17:57 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:75:31: error: 'index' has both 'extern' and initializer
+  extern volatile unsigned int index = 0;
+                               ^
+../Sources/Events.c: In function 'AS1_OnRxChar':
+../Sources/Events.c:78:2: error: expected declaration specifiers before 'if'
+  if (ERR_OK == AS1_RecvChar(&c)) {
+  ^
+../Sources/Events.c:89:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+../Sources/Events.c:90:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+../Sources/Events.c:109:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Sources/Events.c:130:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Sources/Events.c:151:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Sources/Events.c:171:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Sources/Events.c:187:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Sources/Events.c:76:6: error: old-style parameter declarations in prototyped function definition
+ void AS1_OnRxChar(void)
+      ^
+../Sources/Events.c:189:1: error: expected '{' at end of input
+ }
+ ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:189:1: error: expected declaration or statement at end of input
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1
+06:23:41 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'AS1_OnRxChar':
+../Sources/Events.c:82:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (AS1_RecvChar(c) == '\n') {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'char'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c:85:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (AS1_RecvChar(c) == '\r') {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'char'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:189:1: error: expected declaration or statement at end of input
+ }
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1
+06:24:34 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'AS1_OnRxChar':
+../Sources/Events.c:82:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (AS1_RecvChar('\n')) {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'int'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c:85:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (AS1_RecvChar('\r')) {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'int'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:189:1: error: expected declaration or statement at end of input
+ }
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1
+06:25:29 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'AS1_OnRxChar':
+../Sources/Events.c:82:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (ERR_OK == AS1_RecvChar('\n')) {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'int'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c:85:3: warning: passing argument 1 of 'AS1_RecvChar' makes pointer from integer without a cast [enabled by default]
+   if (ERR_OK == AS1_RecvChar('\r')) {
+   ^
+In file included from ../Sources/Events.h:46:0,
+                 from ../Sources/Events.c:30:
+C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code/AS1.h:182:6: note: expected 'AS1_TComData *' but argument is of type 'int'
+ byte AS1_RecvChar(AS1_TComData *Chr);
+      ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:189:1: error: expected declaration or statement at end of input
+ }
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1
+06:26:23 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:184:1: error: expected declaration or statement at end of input
+ }
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1
+06:26:56 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:184:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [Sources/Events.o] Error 1
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+06:28:01 **** Incremental Build of configuration Debug for project LabWeek7 ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:184:1: error: expected declaration or statement at end of input
+ }
+ ^
+Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
+make: *** [Sources/Events.o] Error 1

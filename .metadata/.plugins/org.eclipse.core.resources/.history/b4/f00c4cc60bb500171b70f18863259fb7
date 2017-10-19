@@ -79,7 +79,12 @@ void AS1_OnRxChar(void) {
 		buffer [index] = c; //save the character
 		index++; //increment the index
 		AS1_SendChar(c);
-
+		if (ERR_OK == AS1_RecvChar('\n')) {
+			buffer [index] = 0; //trailing null
+		}
+		if (ERR_OK == AS1_RecvChar('\r')) {
+			buffer [index] = 0; //trailing null
+		}
 	}
 }
 

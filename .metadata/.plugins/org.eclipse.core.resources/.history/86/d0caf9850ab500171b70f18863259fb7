@@ -79,7 +79,7 @@
       <File Name="Static_Code/PDD/PDD_Types.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646035" FileType="1048576" CompNumb="4" />
       <File Name="Generated_Code/PE_Error.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646456" FileType="45637" />
       <File Name="Generated_Code/AS1.h" FileDate="2017-10-20, 06:12:48" FileAge="1508443968850" FileType="45637" CompNumb="17" />
-      <File Name="Documentation/LabWeek7_SIGNALS.txt" FileDate="2017-10-20, 06:26:52" FileAge="1508444812266" FileType="3072" />
+      <File Name="Documentation/LabWeek7_SIGNALS.txt" FileDate="2017-10-20, 06:14:01" FileAge="1508444041154" FileType="3072" />
       <File Name="Documentation/LabWeek7.txt" FileDate="2017-10-20, 06:12:49" FileAge="1508443969606" FileType="3072" />
       <File Name="Generated_Code/AS1.c" FileDate="2017-10-20, 06:12:48" FileAge="1508443968842" FileType="45637" CompNumb="17" />
       <File Name="Documentation/doxygen/RoutingReport_component.txt" FileDate="2017-10-10, 21:24:06" FileAge="1507634646402" FileType="45637" CompNumb="4" />
@@ -87,7 +87,7 @@
       <File Name="Sources/Events.h" FileDate="2017-10-20, 06:12:49" FileAge="1508443969155" FileType="131328" />
       <File Name="Static_Code/PDD/SAI_PDD.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646251" FileType="1048576" />
       <File Name="Generated_Code/PE_LDD.c" FileDate="2017-10-20, 06:12:49" FileAge="1508443969120" FileType="45637" CompNumb="4" />
-      <File Name="Sources/Events.c" FileDate="2017-10-20, 06:26:23" FileAge="1508444783434" FileType="131328" />
+      <File Name="Sources/Events.c" FileDate="2017-10-20, 06:12:49" FileAge="1508443969160" FileType="131328" />
       <File Name="Static_Code/PDD/DMA_PDD.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646108" FileType="1048576" />
       <File Name="Static_Code/PDD/SPI_PDD.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646274" FileType="1048576" />
       <File Name="Static_Code/PDD/EWM_PDD.h" FileDate="2017-10-10, 21:24:06" FileAge="1507634646119" FileType="1048576" />
@@ -105,5 +105,5 @@
       <File Name="Documentation/doxygen/PwmLdd3_component.txt" FileDate="2017-10-10, 22:00:45" FileAge="1507636845352" FileType="45637" CompNumb="12" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>9</CodeGenReference>
+  <CodeGenReference>7</CodeGenReference>
 </CodeGenerationInfo>

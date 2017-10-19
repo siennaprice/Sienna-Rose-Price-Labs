@@ -72,17 +72,22 @@ void Cpu_OnNMIINT(void)
 void Inhr1_OnRxChar(void)
 {
 	extern volatile char buffer [100];
-	extern volatile unsigned int index;
-void AS1_OnRxChar(void) {
+	extern volatile unsigned int index = 0;
+void AS1_OnRxChar(void)
 	char c;
 	if (ERR_OK == AS1_RecvChar(&c)) {
 		buffer [index] = c; //save the character
 		index++; //increment the index
 		AS1_SendChar(c);
-
+		if (AS1_RecvChar(c) == '\n') {
+			buffer [index] = 0; //trailing null
+		}
+		if (AS1_RecvChar(c) == '\r') {
+			buffer [index] = 0; //trailing null
+		}
 	}
 }
-
+}
 
 /*
 ** ===================================================================
