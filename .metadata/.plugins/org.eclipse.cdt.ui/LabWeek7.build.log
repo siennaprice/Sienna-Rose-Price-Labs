@@ -1,14 +1,14 @@
-06:28:01 **** Incremental Build of configuration Debug for project LabWeek7 ****
+09:07:07 **** Incremental Build of configuration Debug for project LabWeek7 ****
 make all 
 Building file: ../Sources/Events.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/LabWeek7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
 ../Sources/Events.c: In function 'Inhr1_OnRxChar':
-../Sources/Events.c:184:1: error: expected declaration or statement at end of input
+../Sources/Events.c:200:1: error: expected declaration or statement at end of input
  }
  ^
 Sources/subdir.mk:21: recipe for target 'Sources/Events.o' failed
 make: *** [Sources/Events.o] Error 1
 
-06:28:01 Build Finished (took 345ms)
+09:07:07 Build Finished (took 339ms)
 
