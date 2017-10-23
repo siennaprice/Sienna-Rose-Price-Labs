@@ -1,4 +1,4 @@
-02:25:46 **** Incremental Build of configuration Debug for project Lab7 ****
+02:27:49 **** Build of configuration Debug for project Lab7 ****
 make all 
 Building target: Lab7.elf
 Invoking: Cross ARM C++ Linker
@@ -13,5 +13,5 @@ collect2.exe: error: ld returned 1 exit status
 makefile:53: recipe for target 'Lab7.elf' failed
 make: *** [Lab7.elf] Error 1
 
-02:25:47 Build Finished (took 399ms)
+02:27:50 Build Finished (took 401ms)
 
