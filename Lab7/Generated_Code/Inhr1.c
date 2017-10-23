@@ -7,7 +7,7 @@
 **     Version     : Component 02.611, Driver 01.01, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-24, 02:12, # CodeGen: 3
+**     Date/Time   : 2017-10-24, 02:33, # CodeGen: 9
 **     Abstract    :
 **         This component "AsynchroSerial" implements an asynchronous serial
 **         communication. The component supports different settings of
@@ -353,7 +353,12 @@ void ASerialLdd1_OnBlockReceived(LDD_TUserData *UserDataPtr)
 */
 void ASerialLdd1_OnBlockSent(LDD_TUserData *UserDataPtr)
 {
+  word OnFlags = 0x00U;                /* Temporary variable for flags */
+
   (void)UserDataPtr;                   /* Parameter is not used, suppress unused argument warning */
+  if ((SerFlag & RUNINT_FROM_TX) != 0U) { /* Is flag "running int from TX" set? */
+    OnFlags |= ON_TX_CHAR;             /* Set flag "OnTxChar" */
+  }
   OutIndexR++;
   if (OutIndexR >= Inhr1_OUT_BUF_SIZE) { /* Is the index out of the transmit buffer? */
     OutIndexR = 0x00U;                 /* Set index on the first item into the transmit buffer */
@@ -364,6 +369,9 @@ void ASerialLdd1_OnBlockSent(LDD_TUserData *UserDataPtr)
     (void)ASerialLdd1_SendBlock(ASerialLdd1_DeviceDataPtr, (LDD_TData *)&OutBuffer[OutIndexR], 1U); /* Send one data byte */
   } else {
     SerFlag &= (byte)~(RUNINT_FROM_TX); /* Clear "running int from TX" and "full TX buff" flags */
+  }
+  if ((OnFlags & ON_TX_CHAR) != 0x00U) { /* Is flag "OnTxChar" set? */
+    Inhr1_OnTxChar();                  /* If yes then invoke user event */
   }
 }
 

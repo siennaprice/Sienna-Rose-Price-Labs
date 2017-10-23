@@ -7,7 +7,7 @@
 **     Version     : Component 02.241, Driver 01.01, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-24, 02:12, # CodeGen: 3
+**     Date/Time   : 2017-10-24, 02:31, # CodeGen: 7
 **     Abstract    :
 **         This component implements a pulse-width modulation generator
 **         that generates signal with variable duty and fixed cycle. 
@@ -34,6 +34,7 @@
 **          Referenced components                          : 
 **            PWM_LDD                                      : PWM_LDD
 **     Contents    :
+**         SetRatio8  - byte RedLED_SetRatio8(byte Ratio);
 **         SetRatio16 - byte RedLED_SetRatio16(word Ratio);
 **         SetDutyUS  - byte RedLED_SetDutyUS(word Time);
 **         SetDutyMS  - byte RedLED_SetDutyMS(word Time);
@@ -104,6 +105,30 @@ extern "C" {
 #define RedLED_PERIOD_VALUE PwmLdd1_PERIOD_VALUE /* Initial period value in ticks of the timer. It is available only if the bean is enabled in high speed mode. */
 #define RedLED_PERIOD_VALUE_HIGH PwmLdd1_PERIOD_VALUE_0 /* Period value in ticks of the timer in high speed mode. It is available only if the bean is enabled in high speed mode. */
 
+
+/*
+** ===================================================================
+**     Method      :  RedLED_SetRatio8 (component PWM)
+**     Description :
+**         This method sets a new duty-cycle ratio. Ratio is expressed
+**         as an 8-bit unsigned integer number. 0 - FF value is
+**         proportional to ratio 0 - 100%. The method is available
+**         only if it is not selected list of predefined values in
+**         <Starting pulse width> property. 
+**         Note: Calculated duty depends on the timer capabilities and
+**         on the selected period.
+**     Parameters  :
+**         NAME            - DESCRIPTION
+**         Ratio           - Ratio to set. 0 - 255 value is
+**                           proportional to ratio 0 - 100%
+**     Returns     :
+**         ---             - Error code, possible codes:
+**                           ERR_OK - OK
+**                           ERR_SPEED - This device does not work in
+**                           the active speed mode
+** ===================================================================
+*/
+#define RedLED_SetRatio8(Ratio) (PwmLdd1_SetRatio8(PwmLdd1_DeviceData, Ratio))
 
 /*
 ** ===================================================================

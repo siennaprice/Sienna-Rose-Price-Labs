@@ -54,7 +54,8 @@ int main(void)
   /* Write your local variable definition here */
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
-  PE_low_level_init();
+
+	PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
@@ -63,7 +64,7 @@ int greenBright = 0;
 int blueBright = 0;
 
 //The Terminal
-Term1_SetColor(clBlack,clCyan);
+Term1_SetColor(clWhite,clBlack);
 Term1_Cls();
 Term1_MoveTo(1,1);
 
@@ -79,7 +80,7 @@ for(int j=0; j<3; j++){
 		Term1_SendStr(" ");
 	}
 }
-Term1_Moveto(1,10);
+Term1_MoveTo(1,10);
 Term1_SendStr("                                                         ");
 
 Term1_SetColor(clWhite,clBlack);
@@ -94,13 +95,13 @@ Term1_SendStr("Blue: ");
 for(;;){
 	Term1_ReadLine(&buffer);
 			sscanf(buffer,"blue %i",&blueBright);
-			PWM1_SetRatio8(blueBright);
+			BlueLED_SetRatio8(blueBright);
 
 			sscanf(buffer,"red %i",&redBright);
-			PWM2_SetRatio8(redBright);
+			RedLED_SetRatio8(redBright);
 
 			sscanf(buffer,"green %i",&greenBright);
-			PWM3_SetRatio8(greenBright);
+			GreenLED_SetRatio8(greenBright);
 
 			Term1_MoveTo(10,5);
 			Term1_SendNum(redBright);

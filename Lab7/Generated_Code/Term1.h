@@ -7,7 +7,7 @@
 **     Version     : Component 02.061, Driver 03.22, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-24, 02:23, # CodeGen: 4
+**     Date/Time   : 2017-10-24, 02:30, # CodeGen: 6
 **     Abstract    :
 **This components generates low-level console IO routines for selected UART.
 **     Settings    :
@@ -27,6 +27,7 @@
 **         SetColor   - void Term1_SetColor(uint8_t foreground, uint8_t background);
 **         ReadChar   - void Term1_ReadChar(char_t *c);
 **         KeyPressed - bool Term1_KeyPressed(void);
+**         ReadLine   - void Term1_ReadLine(uint8_t *str);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -93,6 +94,21 @@
 #define   clMagenta 35U                /* Magenta color */
 #define   clCyan    36U                /* Cyan color */
 #define   clWhite   37U                /* White color */
+
+void Term1_ReadLine(void *str);
+/*
+** ===================================================================
+**     Method      :  Term1_ReadLine (component Term)
+**     Description :
+**         Read string from the terminal. Waits until whole string is
+**         read. Method expects carriage return and line feed (CRLF)
+**         escape sequence as a string termination.
+**     Parameters  :
+**         NAME            - DESCRIPTION
+**       * str             - Pointer to an user string buffer.
+**     Returns     : Nothing
+** ===================================================================
+*/
 
 void Term1_SendChar(char_t Val);
 /*

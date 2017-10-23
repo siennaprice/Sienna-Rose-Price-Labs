@@ -1,17 +1,20 @@
-02:27:49 **** Build of configuration Debug for project Lab7 ****
+02:36:16 **** Incremental Build of configuration Debug for project Lab7 ****
 make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Static_Code/PDD" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Static_Code/IO_Map" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Sources" -I"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:96:4: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+    sscanf(buffer,"blue %i",&blueBright);
+    ^
+../Sources/main.c:96:4: warning: incompatible implicit declaration of built-in function 'sscanf' [enabled by default]
+Finished building: ../Sources/main.c
+ 
 Building target: Lab7.elf
 Invoking: Cross ARM C++ Linker
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Sienna/Documents/KinetisWorkSpace/Sienna-Rose-Price-Labs/Lab7/Project_Settings/Linker_Files" -Wl,-Map,"Lab7.map" -specs=nano.specs -specs=nosys.specs -o "Lab7.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/BlueLED.o ./Generated_Code/Cpu.o ./Generated_Code/GreenLED.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/PwmLdd3.o ./Generated_Code/RedLED.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
-./Sources/main.o: In function `main':
-C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\Lab7\Debug/../Sources/main.c:82: undefined reference to `Term1_Moveto'
-C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\Lab7\Debug/../Sources/main.c:95: undefined reference to `Term1_ReadLine'
-C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\Lab7\Debug/../Sources/main.c:97: undefined reference to `PWM1_SetRatio8'
-C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\Lab7\Debug/../Sources/main.c:100: undefined reference to `PWM2_SetRatio8'
-C:\Users\Sienna\Documents\KinetisWorkSpace\Sienna-Rose-Price-Labs\Lab7\Debug/../Sources/main.c:103: undefined reference to `PWM3_SetRatio8'
-collect2.exe: error: ld returned 1 exit status
-makefile:53: recipe for target 'Lab7.elf' failed
-make: *** [Lab7.elf] Error 1
+Finished building target: Lab7.elf
+ 
 
-02:27:50 Build Finished (took 401ms)
+02:36:17 Build Finished (took 743ms)
 

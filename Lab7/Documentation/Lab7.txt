@@ -17,8 +17,14 @@ Module "Term1"     (component Term)
                 color   clMagenta - Magenta color   clCyan - Cyan color   clWhite - White color
    - Term1_ReadChar -Read char from terminal.
    - Term1_KeyPressed -Test if char was received from the terminal.
+   - Term1_ReadLine -Read string from the terminal. Waits until whole string is read. Method expects carriage return and line 
+                feed (CRLF) escape sequence as a string termination.
 
 Module "RedLED"    (component PWM)
+   - RedLED_SetRatio8 -This method sets a new duty-cycle ratio. Ratio is expressed as an 8-bit unsigned integer number. 0 - FF 
+                value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of predefined 
+                values in <Starting pulse width> property.   Note: Calculated duty depends on the timer capabilities and on the 
+                selected period.
    - RedLED_SetRatio16 -This method sets a new duty-cycle ratio. Ratio is expressed as a 16-bit unsigned integer number. 0 - 
                 FFFF value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of 
                 predefined values in <Starting pulse width> property.   Note: Calculated duty depends on the timer 
@@ -48,6 +54,10 @@ Module "TU1"       (component TimerUnit_LDD)
                 available when at least one channel is configured.
 
 Module "BlueLED"   (component PWM)
+   - BlueLED_SetRatio8 -This method sets a new duty-cycle ratio. Ratio is expressed as an 8-bit unsigned integer number. 0 - FF 
+                value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of predefined 
+                values in <Starting pulse width> property.   Note: Calculated duty depends on the timer capabilities and on the 
+                selected period.
    - BlueLED_SetRatio16 -This method sets a new duty-cycle ratio. Ratio is expressed as a 16-bit unsigned integer number. 0 - 
                 FFFF value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of 
                 predefined values in <Starting pulse width> property.   Note: Calculated duty depends on the timer 
@@ -60,6 +70,10 @@ Module "BlueLED"   (component PWM)
                 <Starting pulse width> property.
 
 Module "GreenLED"  (component PWM)
+   - GreenLED_SetRatio8 -This method sets a new duty-cycle ratio. Ratio is expressed as an 8-bit unsigned integer number. 0 - 
+                FF value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of 
+                predefined values in <Starting pulse width> property.   Note: Calculated duty depends on the timer capabilities 
+                and on the selected period.
    - GreenLED_SetRatio16 -This method sets a new duty-cycle ratio. Ratio is expressed as a 16-bit unsigned integer number. 0 - 
                 FFFF value is proportional to ratio 0 - 100%. The method is available only if it is not selected list of 
                 predefined values in <Starting pulse width> property.   Note: Calculated duty depends on the timer 

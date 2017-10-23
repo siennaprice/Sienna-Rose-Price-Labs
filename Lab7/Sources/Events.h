@@ -81,6 +81,19 @@ void Cpu_OnNMIINT(void);
 */
 void Inhr1_OnRxChar(void);
 
+/*
+** ===================================================================
+**     Event       :  Inhr1_OnTxChar (module Events)
+**
+**     Component   :  Inhr1 [AsynchroSerial]
+**     Description :
+**         This event is called after a character is transmitted.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void Inhr1_OnTxChar(void);
+
 /* END Events */
 
 #ifdef __cplusplus

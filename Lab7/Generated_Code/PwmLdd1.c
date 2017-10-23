@@ -7,7 +7,7 @@
 **     Version     : Component 01.014, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-24, 02:12, # CodeGen: 3
+**     Date/Time   : 2017-10-24, 02:31, # CodeGen: 7
 **     Abstract    :
 **          This component implements a pulse-width modulation generator
 **          that generates signal with variable duty and fixed cycle.
@@ -43,6 +43,7 @@
 **            Linked component                             : TU1
 **     Contents    :
 **         Init       - LDD_TDeviceData* PwmLdd1_Init(LDD_TUserData *UserDataPtr);
+**         SetRatio8  - LDD_TError PwmLdd1_SetRatio8(LDD_TDeviceData *DeviceDataPtr, uint8_t Ratio);
 **         SetRatio16 - LDD_TError PwmLdd1_SetRatio16(LDD_TDeviceData *DeviceDataPtr, uint16_t Ratio);
 **         SetDutyUS  - LDD_TError PwmLdd1_SetDutyUS(LDD_TDeviceData *DeviceDataPtr, uint16_t Time);
 **         SetDutyMS  - LDD_TError PwmLdd1_SetDutyMS(LDD_TDeviceData *DeviceDataPtr, uint16_t Time);
@@ -161,6 +162,41 @@ LDD_TDeviceData* PwmLdd1_Init(LDD_TUserData *UserDataPtr)
     return NULL;                       /* If so, then the PWM initialization is also unsuccessful */
   }
   return ((LDD_TDeviceData *)DeviceDataPrv); /* Return pointer to the device data structure */
+}
+
+/*
+** ===================================================================
+**     Method      :  PwmLdd1_SetRatio8 (component PWM_LDD)
+*/
+/*!
+**     @brief
+**         This method sets a new duty-cycle ratio. Ratio is expressed
+**         as an 8-bit unsigned integer number. 0 - FF value is
+**         proportional to ratio 0 - 100%. The method is available
+**         only if it is not selected list of predefined values in
+**         [Starting pulse width] property. 
+**         Note: Calculated duty depends on the timer capabilities and
+**         on the selected period.
+**     @param
+**         DeviceDataPtr   - Device data structure
+**                           pointer returned by [Init] method.
+**     @param
+**         Ratio           - Ratio to set. 0 - 255 value is
+**                           proportional to ratio 0 - 100%
+**     @return
+**                         - Error code, possible codes:
+**                           ERR_OK - OK
+**                           ERR_SPEED - The component does not work in
+**                           the active clock configuration
+*/
+/* ===================================================================*/
+LDD_TError PwmLdd1_SetRatio8(LDD_TDeviceData *DeviceDataPtr, uint8_t Ratio)
+{
+  PwmLdd1_TDeviceData *DeviceDataPrv = (PwmLdd1_TDeviceData *)DeviceDataPtr;
+
+  DeviceDataPrv->RatioStore = (uint16_t)Ratio << 8U; /* Store new value of the ratio */
+  SetRatio(DeviceDataPtr);
+  return ERR_OK;
 }
 
 /*

@@ -3,7 +3,7 @@
   <Header>
     <Name>Lab7</Name>
     <SavedBy>Sienna</SavedBy>
-    <ModificationStamp>3</ModificationStamp>
+    <ModificationStamp>7</ModificationStamp>
     <Date>2017-10-24</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1550-0615</PEversion>
@@ -13806,8 +13806,8 @@
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Value>true</Value>
-              <Expanded>false</Expanded>
-              <LastSelection>false</LastSelection>
+              <Expanded>true</Expanded>
+              <LastSelection>true</LastSelection>
               <LastUserSel>yes</LastUserSel>
             </ItemState>
             <ItemState>
@@ -13849,10 +13849,10 @@
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Value>false</Value>
+              <Value>true</Value>
               <Expanded>false</Expanded>
               <LastSelection>false</LastSelection>
-              <LastUserSel>no</LastUserSel>
+              <LastUserSel>yes</LastUserSel>
             </ItemState>
             <ItemState>
               <ItemSymbol>OnTxCharName</ItemSymbol>
@@ -14217,10 +14217,10 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
+        <Index>0</Index>
+        <Value>true</Value>
         <LastSelection>true</LastSelection>
-        <LastUserSel>no</LastUserSel>
+        <LastUserSel>yes</LastUserSel>
         <UsrMethodName>ReadLine</UsrMethodName>
       </ItemState>
     </Methods>
@@ -15358,10 +15358,10 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
+        <Index>0</Index>
+        <Value>true</Value>
         <LastSelection>true</LastSelection>
-        <LastUserSel>no</LastUserSel>
+        <LastUserSel>yes</LastUserSel>
         <UsrMethodName>SetRatio8</UsrMethodName>
       </ItemState>
       <ItemState>
@@ -18367,10 +18367,10 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
+        <Index>0</Index>
+        <Value>true</Value>
         <LastSelection>true</LastSelection>
-        <LastUserSel>no</LastUserSel>
+        <LastUserSel>yes</LastUserSel>
         <UsrMethodName>SetRatio8</UsrMethodName>
       </ItemState>
       <ItemState>
@@ -19791,10 +19791,10 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <Value>false</Value>
+        <Index>0</Index>
+        <Value>true</Value>
         <LastSelection>true</LastSelection>
-        <LastUserSel>no</LastUserSel>
+        <LastUserSel>yes</LastUserSel>
         <UsrMethodName>SetRatio8</UsrMethodName>
       </ItemState>
       <ItemState>
